@@ -187,5 +187,30 @@
 	<string id="40250">CURRENT SELECTED</string>
 	<string id="40251">CURRENT PLAYLIST</string>
 	<string id="40252">CREATE</string>
+	<string id="40253">HIDDEN</string>
+	<string id="40054">Reset Home Movie Artwork Folder</string>
+	<string id="40055">Reset Home Movie Artwork Image</string>
+	<string id="40056">Reset Home TV Artwork Folder</string>
+	<string id="40057">Reset Home TV Artwork Image</string>
+	<string id="40058">Reset Home Music Artwork Folder</string>
+	<string id="40059">Reset Home Music Artwork Image</string>
+	<string id="40060">Reset Home Videos Artwork Folder</string>
+	<string id="40061">Reset Home Videos Artwork Image</string>
+	<string id="40062">Reset Home Pictures Artwork Folder</string>
+	<string id="40063">Reset Home Pictures Artwork Image</string>
+	<string id="40064">Reset Home Weather Artwork Folder</string>
+	<string id="40065">Reset Home Weather Artwork Image</string>
+	<string id="40066">Reset Home Programs Artwork Folder</string>
+	<string id="40067">Reset Home Programs Artwork Image</string>
+	<string id="40068">Reset Home Games Artwork Folder</string>
+	<string id="40069">Reset Home Games Artwork Image</string>
+	<string id="40070">Reset Home Scripts Artwork Folder</string>
+	<string id="40071">Reset Home Scripts Artwork Image</string>
+	<string id="40072">Reset Home PlayDisc Artwork Folder</string>
+	<string id="40073">Reset Home PlayDisc Artwork Image</string>
+	<string id="40074">Reset Home Shutdown Artwork Folder</string>
+	<string id="40075">Reset Home Shutdown Artwork Image</string>
+	<string id="40076">Reset Home Settings Artwork Folder</string>
+	<string id="40077">Reset Home Settings Artwork Image</string>
 	
 </strings>
