@@ -35,7 +35,7 @@
 				<posy>128</posy>
 				<width>690</width>
 				<height>34</height>
-				<label>$LOCALIZE[13406]</label>
+				<label>[UPPERCASE]$LOCALIZE[13406][/UPPERCASE]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<include>DialogHeader</include>
@@ -90,7 +90,7 @@
 				<height>34</height>
 				<align>right</align>
 				<include>DialogLabelLargeNF</include>
-				<label>$LOCALIZE[368]</label>
+				<label>[UPPERCASE]$LOCALIZE[368][/UPPERCASE]</label>
 				<align>right</align>
 				<onleft>3</onleft>
 				<onright>3</onright>
