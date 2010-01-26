@@ -14,7 +14,7 @@
 				<posy>94</posy>
 				<width>896</width>
 				<height>504</height>
-				<texture border="100">common/common_panel_3.png</texture>
+				<texture border="100">common/common_panel.png</texture>
 				<colordiffuse>PanelDiffuse</colordiffuse>
 			</control>
 			<control type="image">
@@ -432,7 +432,7 @@
 					<control type="togglebutton" id="403">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[40036]</label>
-						<altlabel>Reset Home Movie Artwork Folder</altlabel>
+						<altlabel>$LOCALIZE[40054]<altlabel>
 						<onclick>Skin.SetPath(CustomMoviesFolder)</onclick>
 						<onclick>Skin.Reset(CustomMoviesImage)</onclick>
 						<altclick>Skin.Reset(CustomMoviesFolder)</altclick>
@@ -445,7 +445,7 @@
 					<control type="togglebutton" id="404">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[40037]</label>
-						<altlabel>Reset Home Movie Artwork Image</altlabel>
+						<altlabel>$LOCALIZE[40055]<altlabel>
 						<onclick>Skin.SetImage(CustomMoviesImage)</onclick>
 						<onclick>Skin.Reset(CustomMoviesFolder)</onclick>
 						<altclick>Skin.Reset(CustomMoviesImage)</altclick>
@@ -458,7 +458,7 @@
 					<control type="togglebutton" id="405">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[40038]</label>
-						<altlabel>Reset Home TV Artwork Folder</altlabel>
+						<altlabel>$LOCALIZE[40056]<altlabel>
 						<onclick>Skin.SetPath(CustomTVShowsFolder)</onclick>
 						<onclick>Skin.Reset(CustomTVShowsImage)</onclick>
 						<altclick>Skin.Reset(CustomTVShowsFolder)</altclick>
@@ -471,7 +471,7 @@
 					<control type="togglebutton" id="406">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[40039]</label>
-						<altlabel>Reset Home TV Artwork Image</altlabel>
+						<altlabel>$LOCALIZE[40057]<altlabel>
 						<onclick>Skin.SetImage(CustomTVShowsImage)</onclick>
 						<onclick>Skin.Reset(CustomTVShowsFolder)</onclick>
 						<altclick>Skin.Reset(CustomTVShowsImage)</altclick>
@@ -484,7 +484,7 @@
 					<control type="togglebutton" id="407">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[40040]</label>
-						<altlabel>Reset Home Music Artwork Folder</altlabel>
+						<altlabel>$LOCALIZE[40058]<altlabel>
 						<onclick>Skin.SetPath(CustomMusicFolder)</onclick>
 						<onclick>Skin.Reset(CustomMusicImage)</onclick>
 						<altclick>Skin.Reset(CustomMusicFolder)</altclick>
@@ -497,7 +497,7 @@
 					<control type="togglebutton" id="408">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[40041]</label>
-						<altlabel>Reset Home Music Artwork Image</altlabel>
+						<altlabel>$LOCALIZE[40059]<altlabel>
 						<onclick>Skin.SetImage(CustomMusicImage)</onclick>
 						<onclick>Skin.Reset(CustomMusicFolder)</onclick>
 						<altclick>Skin.Reset(CustomMusicImage)</altclick>
@@ -510,7 +510,7 @@
 					<control type="togglebutton" id="409">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[40042]</label>
-						<altlabel>Reset Home Videos Artwork Folder</altlabel>
+						<altlabel>$LOCALIZE[40060]<altlabel>
 						<onclick>Skin.SetPath(CustomVideosFolder)</onclick>
 						<onclick>Skin.Reset(CustomVideosImage)</onclick>
 						<altclick>Skin.Reset(CustomVideosFolder)</altclick>
@@ -523,7 +523,7 @@
 					<control type="togglebutton" id="410">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[40043]</label>
-						<altlabel>Reset Home Videos Artwork Image</altlabel>
+						<altlabel>$LOCALIZE[40061]<altlabel>
 						<onclick>Skin.SetImage(CustomVideosImage)</onclick>
 						<onclick>Skin.Reset(CustomVideosFolder)</onclick>
 						<altclick>Skin.Reset(CustomVideosImage)</altclick>
@@ -536,7 +536,7 @@
 					<control type="togglebutton" id="411">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[40044]</label>
-						<altlabel>Reset Home Pictures Artwork Folder</altlabel>
+						<altlabel>$LOCALIZE[40062]<altlabel>
 						<onclick>Skin.SetPath(CustomPicturesFolder)</onclick>
 						<onclick>Skin.Reset(CustomPicturesImage)</onclick>
 						<altclick>Skin.Reset(CustomPicturesFolder)</altclick>
@@ -549,7 +549,7 @@
 					<control type="togglebutton" id="412">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[40045]</label>
-						<altlabel>Reset Home Pictures Artwork Image</altlabel>
+						<altlabel>$LOCALIZE[40063]<altlabel>
 						<onclick>Skin.SetImage(CustomPicturesImage)</onclick>
 						<onclick>Skin.Reset(CustomPicturesFolder)</onclick>
 						<altclick>Skin.Reset(CustomPicturesImage)</altclick>
@@ -562,7 +562,7 @@
 					<control type="togglebutton" id="413">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[40046]</label>
-						<altlabel>Reset Home Weather Artwork Folder</altlabel>
+						<altlabel>$LOCALIZE[40064]<altlabel>
 						<onclick>Skin.SetPath(CustomWeatherFolder)</onclick>
 						<onclick>Skin.Reset(CustomWeatherImage)</onclick>
 						<altclick>Skin.Reset(CustomWeatherFolder)</altclick>
@@ -576,7 +576,7 @@
 					<control type="togglebutton" id="414">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[40047]</label>
-						<altlabel>Reset Home Weather Artwork Image</altlabel>
+						<altlabel>$LOCALIZE[40065]<altlabel>
 						<onclick>Skin.SetImage(CustomWeatherImage)</onclick>
 						<onclick>Skin.Reset(CustomWeatherFolder)</onclick>
 						<altclick>Skin.Reset(CustomWeatherImage)</altclick>
@@ -590,7 +590,7 @@
 					<control type="togglebutton" id="415">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[40048]</label>
-						<altlabel>Reset Home Programs Artwork Folder</altlabel>
+						<altlabel>$LOCALIZE[40066]<altlabel>
 						<onclick>Skin.SetPath(CustomProgramsFolder)</onclick>
 						<onclick>Skin.Reset(CustomProgramsImage)</onclick>
 						<altclick>Skin.Reset(CustomProgramsFolder)</altclick>
@@ -603,7 +603,7 @@
 					<control type="togglebutton" id="416">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[40049]</label>
-						<altlabel>Reset Home Programs Artwork Image</altlabel>
+						<altlabel>$LOCALIZE[40067]<altlabel>
 						<onclick>Skin.SetImage(CustomProgramsImage)</onclick>
 						<onclick>Skin.Reset(CustomProgramsFolder)</onclick>
 						<altclick>Skin.Reset(CustomProgramsImage)</altclick>
@@ -616,7 +616,7 @@
 					<control type="togglebutton" id="417">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[40050]</label>
-						<altlabel>Reset Home Games Artwork Folder</altlabel>
+						<altlabel>$LOCALIZE[40068]<altlabel>
 						<onclick>Skin.SetPath(CustomGamesFolder)</onclick>
 						<onclick>Skin.Reset(CustomGamesImage)</onclick>
 						<altclick>Skin.Reset(CustomGamesFolder)</altclick>
@@ -629,7 +629,7 @@
 					<control type="togglebutton" id="418">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[40051]</label>
-						<altlabel>Reset Home Games Artwork Image</altlabel>
+						<altlabel>$LOCALIZE[40069]<altlabel>
 						<onclick>Skin.SetImage(CustomGamesImage)</onclick>
 						<onclick>Skin.Reset(CustomGamesFolder)</onclick>
 						<altclick>Skin.Reset(CustomGamesImage)</altclick>
@@ -642,7 +642,7 @@
 					<control type="togglebutton" id="419">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[40052]</label>
-						<altlabel>Reset Home Scripts Artwork Folder</altlabel>
+						<altlabel>$LOCALIZE[40070]<altlabel>
 						<onclick>Skin.SetPath(CustomScriptsFolder)</onclick>
 						<onclick>Skin.Reset(CustomScriptsImage)</onclick>
 						<altclick>Skin.Reset(CustomScriptsFolder)</altclick>
@@ -656,7 +656,7 @@
 					<control type="togglebutton" id="420">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[40053]</label>
-						<altlabel>Reset Home Scripts Artwork Image</altlabel>
+						<altlabel>$LOCALIZE[40071]<altlabel>
 						<onclick>Skin.SetImage(CustomScriptsImage)</onclick>
 						<onclick>Skin.Reset(CustomScriptsFolder)</onclick>
 						<altclick>Skin.Reset(CustomScriptsImage)</altclick>
@@ -670,7 +670,7 @@
 					<control type="togglebutton" id="421">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[40054]</label>
-						<altlabel>Reset Home PlayDisc Artwork Folder</altlabel>
+						<altlabel>$LOCALIZE[40072]<altlabel>
 						<onclick>Skin.SetPath(CustomPlayDiscFolder)</onclick>
 						<onclick>Skin.Reset(CustomPlayDiscImage)</onclick>
 						<altclick>Skin.Reset(CustomPlayDiscFolder)</altclick>
@@ -684,7 +684,7 @@
 					<control type="togglebutton" id="422">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[40055]</label>
-						<altlabel>Reset Home PlayDisc Artwork Image</altlabel>
+						<altlabel>$LOCALIZE[40073]<altlabel>
 						<onclick>Skin.SetImage(CustomPlayDiscImage)</onclick>
 						<onclick>Skin.Reset(CustomPlayDiscFolder)</onclick>
 						<altclick>Skin.Reset(CustomPlayDiscImage)</altclick>
@@ -698,7 +698,7 @@
 					<control type="togglebutton" id="423">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[40056]</label>
-						<altlabel>Reset Home Shutdown Artwork Folder</altlabel>
+						<altlabel>$LOCALIZE[40074]<altlabel>
 						<onclick>Skin.SetPath(CustomShutdownFolder)</onclick>
 						<onclick>Skin.Reset(CustomShutdownImage)</onclick>
 						<altclick>Skin.Reset(CustomShutdownFolder)</altclick>
@@ -712,7 +712,7 @@
 					<control type="togglebutton" id="424">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[40057]</label>
-						<altlabel>Reset Home Shutdown Artwork Image</altlabel>
+						<altlabel>$LOCALIZE[40075]<altlabel>
 						<onclick>Skin.SetImage(CustomShutdownImage)</onclick>
 						<onclick>Skin.Reset(CustomShutdownFolder)</onclick>
 						<altclick>Skin.Reset(CustomShutdownImage)</altclick>
@@ -726,7 +726,7 @@
 					<control type="togglebutton" id="425">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[40058]</label>
-						<altlabel>Reset Home Settings Artwork Folder</altlabel>
+						<altlabel>$LOCALIZE[40076]<altlabel>
 						<onclick>Skin.SetPath(CustomSettingsFolder)</onclick>
 						<onclick>Skin.Reset(CustomSettingsImage)</onclick>
 						<altclick>Skin.Reset(CustomSettingsFolder)</altclick>
@@ -739,7 +739,7 @@
 					<control type="togglebutton" id="426">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[40059]</label>
-						<altlabel>Reset Home Settings Artwork Image</altlabel>
+						<altlabel>$LOCALIZE[40077]<altlabel>
 						<onclick>Skin.SetImage(CustomSettingsImage)</onclick>
 						<onclick>Skin.Reset(CustomSettingsFolder)</onclick>
 						<altclick>Skin.Reset(CustomSettingsImage)</altclick>
