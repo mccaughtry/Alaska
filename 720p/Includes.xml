@@ -93,32 +93,59 @@
 			<animation effect="slide" end="400,0" time="400" easing="inout" tween="cubic" condition="[Window.IsVisible(104) + [Window.IsVisible(101) | Window.IsVisible(112) | Window.IsVisible(133)]] | [Window.IsVisible(113) + [Window.IsVisible(101) | Window.IsVisible(112) | Window.IsVisible(133)]] | [Window.IsVisible(112) + [Window.IsVisible(101) | Window.IsVisible(133)]] | [[Window.IsVisible(101) + Window.IsVisible(133)]]">Conditional</animation>
 			<posx>1252</posx>
 			<posy>30</posy>
-			<control type="label">
-				<width>300</width>
-				<font>Font_Time</font>
-				<textcolor>Time</textcolor>
-				<label>$INFO[System.Time(hh:mm)] [COLOR TimeAMPM]$LOCALIZE[40155][/COLOR]</label>
-				<align>right</align>
-				<animation effect="slide" start="0,0" end="-100,0" time="0" condition="Skin.HasSetting(ShowGlobalTemp)">Conditional</animation>
-				<visible>substring(system.time,AM,right)</visible>
+			<control type="group">
+				<visible>!Skin.HasSetting(ShowGlobalTemp)</visible>
+				<control type="label">
+					<width>300</width>
+					<font>Font_Time</font>
+					<textcolor>Time</textcolor>
+					<label>$INFO[System.Time(hh:mm)] [COLOR TimeAMPM]$LOCALIZE[40155][/COLOR]</label>
+					<align>right</align>
+					<visible>substring(system.time,AM,right)</visible>
+				</control>
+				<control type="label">
+					<width>300</width>
+					<font>Font_Time</font>
+					<textcolor>Time</textcolor>
+					<label>$INFO[System.Time(hh:mm)] [COLOR TimeAMPM]$LOCALIZE[40156][/COLOR]</label>
+					<align>right</align>
+					<visible>substring(system.time,PM,right)</visible>
+				</control>
+				<control type="label">
+					<width>300</width>
+					<font>Font_Time</font>
+					<textcolor>Time</textcolor>
+					<info>System.Time(hh:mm)</info>
+					<align>right</align>
+					<visible>![substring(system.time,PM,right) | substring(system.time,AM,right)]</visible>
+				</control>
 			</control>
-			<control type="label">
-				<width>300</width>
-				<font>Font_Time</font>
-				<textcolor>Time</textcolor>
-				<label>$INFO[System.Time(hh:mm)] [COLOR TimeAMPM]$LOCALIZE[40156][/COLOR]</label>
-				<align>right</align>
-				<animation effect="slide" start="0,0" end="-100,0" time="0" condition="Skin.HasSetting(ShowGlobalTemp)">Conditional</animation>
-				<visible>substring(system.time,PM,right)</visible>
-			</control>
-			<control type="label">
-				<width>300</width>
-				<font>Font_Time</font>
-				<textcolor>Time</textcolor>
-				<info>System.Time(hh:mm)</info>
-				<align>right</align>
-				<animation effect="slide" start="0,0" end="-100,0" time="0" condition="Skin.HasSetting(ShowGlobalTemp)">Conditional</animation>
-				<visible>![substring(system.time,PM,right) | substring(system.time,AM,right)]</visible>
+			<control type="group">
+				<visible>Skin.HasSetting(ShowGlobalTemp)</visible>
+				<control type="label">
+					<width>300</width>
+					<font>Font_Time</font>
+					<textcolor>Time</textcolor>
+					<label>$INFO[System.Time(hh:mm)] [COLOR TimeAMPM]$LOCALIZE[40155][/COLOR] $INFO[Weather.Temperature]</label>
+					<align>right</align>
+					<visible>substring(system.time,AM,right)</visible>
+				</control>
+				<control type="label">
+					<width>300</width>
+					<font>Font_Time</font>
+					<textcolor>Time</textcolor>
+					<label>$INFO[System.Time(hh:mm)] [COLOR TimeAMPM]$LOCALIZE[40156][/COLOR] $INFO[Weather.Temperature]</label>
+					<align>right</align>
+					<visible>substring(system.time,PM,right)</visible>
+				</control>
+				<control type="label">
+					<width>300</width>
+					<font>Font_Time</font>
+					<textcolor>Time</textcolor>
+					<label>$INFO[System.Time(hh:mm)] $INFO[Weather.Temperature]</label>
+					<align>right</align>
+					<visible>![substring(system.time,PM,right) | substring(system.time,AM,right)]</visible>
+				</control>
 			</control>
 			<control type="label">
 				<posx>-2</posx>
@@ -129,19 +156,6 @@
 				<info>System.Date</info>
 				<align>right</align>
 			</control>
-		</control>
-		<control type="group">
-			<posx>1250</posx>
-			<posy>30</posy>
-			<control type="label">
-				<width>128</width>
-				<font>Font_Time</font>
-				<textcolor>Time</textcolor>
-				<info>Weather.Temperature</info>
-				<align>right</align>
-				<visible effect="fade" time="250">system.hasnetwork</visible>
-			</control>
-			<visible>Skin.HasSetting(ShowGlobalTemp)</visible>
 		</control>
 	</include>
 	<include name="Global_HeadingSectionVars">
@@ -974,7 +988,7 @@
 				<posy>30</posy>
 				<control type="fadelabel">
 					<description>Title</description>
-					<width>1020</width>
+					<width>940</width>
 					<font>Font_Time</font>
 					<textcolor>Time</textcolor>
 					<align>left</align>
@@ -988,7 +1002,7 @@
 				</control>
 				<control type="fadelabel">
 					<description>Title</description>
-					<width>1020</width>
+					<width>940</width>
 					<font>Font_Time</font>
 					<textcolor>Time</textcolor>
 					<align>left</align>
@@ -1002,7 +1016,7 @@
 				</control>
 				<control type="fadelabel">
 					<description>Title</description>
-					<width>1060</width>
+					<width>940</width>
 					<font>Font_Time</font>
 					<textcolor>Time</textcolor>
 					<align>left</align>
@@ -1085,55 +1099,69 @@
 				<posx>1252</posx>
 				<posy>30</posy>
 				<include>Animation_SlideDownFadeOut</include>
-				<control type="label">
-					<width>300</width>
-					<font>Font_Time</font>
-					<textcolor>Time</textcolor>
-					<label>$INFO[System.Time(hh:mm)] [COLOR TimeAMPM]$LOCALIZE[40155][/COLOR]</label>
-					<align>right</align>
-					<animation effect="slide" start="0,0" end="-100,0" time="0" condition="Skin.HasSetting(ShowGlobalTemp)">Conditional</animation>
-					<visible>substring(system.time,AM,right)</visible>
+				<control type="group">
+					<visible>!Skin.HasSetting(ShowGlobalTemp)</visible>
+					<control type="label">
+						<width>300</width>
+						<font>Font_Time</font>
+						<textcolor>Time</textcolor>
+						<label>$INFO[System.Time(hh:mm)] [COLOR TimeAMPM]$LOCALIZE[40155][/COLOR]</label>
+						<align>right</align>
+						<visible>substring(system.time,AM,right)</visible>
+					</control>
+					<control type="label">
+						<width>300</width>
+						<font>Font_Time</font>
+						<textcolor>Time</textcolor>
+						<label>$INFO[System.Time(hh:mm)] [COLOR TimeAMPM]$LOCALIZE[40156][/COLOR]</label>
+						<align>right</align>
+						<visible>substring(system.time,PM,right)</visible>
+					</control>
+					<control type="label">
+						<width>300</width>
+						<font>Font_Time</font>
+						<textcolor>Time</textcolor>
+						<info>System.Time(hh:mm)</info>
+						<align>right</align>
+						<visible>![substring(system.time,PM,right) | substring(system.time,AM,right)]</visible>
+					</control>
 				</control>
-				<control type="label">
-					<width>300</width>
-					<font>Font_Time</font>
-					<textcolor>Time</textcolor>
-					<label>$INFO[System.Time(hh:mm)] [COLOR TimeAMPM]$LOCALIZE[40156][/COLOR]</label>
-					<align>right</align>
-					<animation effect="slide" start="0,0" end="-100,0" time="0" condition="Skin.HasSetting(ShowGlobalTemp)">Conditional</animation>
-					<visible>substring(system.time,PM,right)</visible>
-				</control>
-				<control type="label">
-					<width>300</width>
-					<font>Font_Time</font>
-					<textcolor>Time</textcolor>
-					<info>System.Time(hh:mm)</info>
-					<align>right</align>
-					<animation effect="slide" start="0,0" end="-100,0" time="0" condition="Skin.HasSetting(ShowGlobalTemp)">Conditional</animation>
-					<visible>![substring(system.time,PM,right) | substring(system.time,AM,right)]</visible>
+				<control type="group">
+					<visible>Skin.HasSetting(ShowGlobalTemp)</visible>
+					<control type="label">
+						<width>300</width>
+						<font>Font_Time</font>
+						<textcolor>Time</textcolor>
+						<label>$INFO[System.Time(hh:mm)] [COLOR TimeAMPM]$LOCALIZE[40155][/COLOR] $INFO[Weather.Temperature]</label>
+						<align>right</align>
+						<visible>substring(system.time,AM,right)</visible>
+					</control>
+					<control type="label">
+						<width>300</width>
+						<font>Font_Time</font>
+						<textcolor>Time</textcolor>
+						<label>$INFO[System.Time(hh:mm)] [COLOR TimeAMPM]$LOCALIZE[40156][/COLOR] $INFO[Weather.Temperature]</label>
+						<align>right</align>
+						<visible>substring(system.time,PM,right)</visible>
+					</control>
+					<control type="label">
+						<width>300</width>
+						<font>Font_Time</font>
+						<textcolor>Time</textcolor>
+						<label>$INFO[System.Time(hh:mm)] $INFO[Weather.Temperature]</label>
+						<align>right</align>
+						<visible>![substring(system.time,PM,right) | substring(system.time,AM,right)]</visible>
+					</control>
 				</control>
 				<control type="label">
 					<posx>-2</posx>
 					<posy>40</posy>
-					<width>300</width>
+					<width>600</width>
 					<font>Font_Date</font>
 					<textcolor>Date</textcolor>
 					<label>$LOCALIZE[40243]: $INFO[Player.FinishTime]</label>
 					<align>right</align>
 				</control>
-			</control>
-			<control type="group">
-				<posx>1250</posx>
-				<posy>30</posy>
-				<control type="label">
-					<width>128</width>
-					<font>Font_Time</font>
-					<textcolor>Time</textcolor>
-					<info>Weather.Temperature</info>
-					<align>right</align>
-					<visible effect="fade" time="250">system.hasnetwork</visible>
-				</control>
-				<visible>Skin.HasSetting(ShowGlobalTemp)</visible>
 			</control>
 		</control>
 	</include>
