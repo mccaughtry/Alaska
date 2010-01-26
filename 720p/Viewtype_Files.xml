@@ -32,7 +32,7 @@
 					<selectedcolor>ListSelectedNF</selectedcolor>
 					<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
 					<scroll>false</scroll>
-					<visible>![Window.IsVisible(1) | Window.IsVisible(502) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+					<visible>Window.IsVisible(24) | ![Window.IsVisible(1) | Window.IsVisible(502) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 				</control>
 				<control type="label">
 					<posx>770</posx>
@@ -205,7 +205,7 @@
 					<textcolor>ListTitleFO</textcolor>
 					<selectedcolor>ListSelectedFO</selectedcolor>
 					<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
-					<visible>![Window.IsVisible(1) | Window.IsVisible(502) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+					<visible>Window.IsVisible(24) | ![Window.IsVisible(1) | Window.IsVisible(502) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 				</control>
 				<control type="fadelabel">
 					<posx>30</posx>
