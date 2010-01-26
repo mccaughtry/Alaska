@@ -212,5 +212,8 @@
 	<string id="40075">Reset Home Shutdown Artwork Image</string>
 	<string id="40076">Reset Home Settings Artwork Folder</string>
 	<string id="40077">Reset Home Settings Artwork Image</string>
+	<string id="40078">OPEN PLAYLIST</string>
+	<string id="40079">SAVE PLAYLIST</string>
+	<string id="40080">CLOSE PLAYLIST</string>
 	
 </strings>
