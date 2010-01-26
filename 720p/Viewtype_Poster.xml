@@ -120,6 +120,7 @@
 				<textcolor>PosterTitle</textcolor>
 				<label>[UPPERCASE]$INFO[ListItem.Genre,[B]$LOCALIZE[515]: [/B]][/UPPERCASE]</label>
 				<visible>Container.Content(tvshows) | Container.Content(movies)</visible>
+				<include>Animation_HiddenByInfo</include>
 			</control>
 			<control type="textbox">
 				<posx>346</posx>
@@ -313,6 +314,7 @@
 					<textcolor>PosterTitle</textcolor>
 					<label>[UPPERCASE]$INFO[ListItem.Genre,[B]$LOCALIZE[515]: [/B]][/UPPERCASE]</label>
 					<visible>Container.Content(tvshows) | Container.Content(movies) | Container.Content(music)</visible>
+				<include>Animation_HiddenByInfo</include>
 				</control>
 				<control type="textbox">
 					<posx>320</posx>
