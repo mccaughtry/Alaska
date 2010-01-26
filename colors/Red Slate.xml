@@ -104,10 +104,10 @@
 
 	<!-- Wall colours -->
 
-	<color name="WallIconDiffuse">f9404040</color>
+	<color name="WallIconDiffuse">aa808080</color>
 	<color name="WallArrowBackDiffuse">FFFFFFFF</color>
 	<color name="WallArrowDiffuse">FFc89008</color>
-	<color name="IconDiffuse">f9404040</color>
+	<color name="IconDiffuse">aa808080</color>
 	<color name="InfoPanelPictureDiffuse">ddFFFFFF</color>
 
 	<!-- Watched colours -->
