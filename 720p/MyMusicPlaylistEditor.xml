@@ -50,7 +50,7 @@
 				<control type="button" id="6">
 					<description>Open Button</description>
 					<width>1120</width>
-					<label>[UPPERCASE]$LOCALIZE[40078][/UPPERCASE]</label>
+					<label>[UPPERCASE]$LOCALIZE[40278][/UPPERCASE]</label>
 					<align>left</align>
 					<include>DialogLabelLargeNF</include>
 					<onleft>50</onleft>
@@ -61,7 +61,7 @@
 				<control type="button" id="7">
 					<description>Save Button</description>
 					<width>1120</width>
-					<label>[UPPERCASE]$LOCALIZE[40079][/UPPERCASE]</label>
+					<label>[UPPERCASE]$LOCALIZE[40279][/UPPERCASE]</label>
 					<align>center</align>
 					<include>DialogLabelLargeNF</include>
 					<onleft>6</onleft>
@@ -72,7 +72,7 @@
 				<control type="button" id="8">
 					<description>Clear button</description>
 					<width>1120</width>
-					<label>[UPPERCASE]$LOCALIZE[40080][/UPPERCASE]</label>
+					<label>[UPPERCASE]$LOCALIZE[40280][/UPPERCASE]</label>
 					<align>right</align>
 					<include>DialogLabelLargeNF</include>
 					<onleft>7</onleft>
