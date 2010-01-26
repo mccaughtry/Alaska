@@ -365,7 +365,7 @@
 			<posy>330</posy>
 			<width>1920</width>
 			<align>center</align>
-			<label>[UPPERCASE]$INFO[Container(300).ListItem.Label][/UPPERCASE]</label>
+			<label>$INFO[Container(300).ListItem.Label]</label>
 			<font>Font_MainMenu</font>
 			<textcolor>MainMenu</textcolor>
 			<include>Animation_ZoomOutZoomIn</include>
@@ -464,7 +464,7 @@
 				</item>
 				<item id="8">
 					<description>Settings</description>
-					<label>[UPPERCASE]$LOCALIZE[]5[/UPPERCASE]</label>
+					<label>[UPPERCASE]$LOCALIZE[5][/UPPERCASE]</label>
 					<icon>homeicons/settingsicon.png</icon>
 					<onclick>ActivateWindow(4)</onclick>
 					<visible>!Skin.HasSetting(nosettings)</visible>
@@ -534,7 +534,7 @@
 					<font>Font_HomeMenuListNotSelected</font>
 					<textcolor>Time</textcolor>
 					<selectedcolor>ListTitleNF</selectedcolor>
-					<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</itemlayout>
 			<focusedlayout width="900" height="110">
@@ -548,7 +548,7 @@
 					<font>Font_HomeMenuListSelected</font>
 					<textcolor>ListTitleFO</textcolor>
 					<selectedcolor>ListTitleFO</selectedcolor>
-					<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+					<label>$INFO[ListItem.Label]</label>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="500,0" start="51" end="100" time="600" tween="back" easing="out" />
 						<effect type="fade" start="0" end="100" time="600" />
