@@ -37,7 +37,7 @@
 				<posx>260</posx>
 				<posy>210</posy>
 				<width>760</width>
-				<height>380</height>
+				<height>360</height>
 				<itemgap>2</itemgap>
 				<orientation>vertical</orientation>
 				<onleft>5</onleft>
