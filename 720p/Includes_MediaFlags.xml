@@ -150,7 +150,7 @@
 				<control type="label">
 					<label fallback="?">$INFO[ListItem.VideoAspect]</label>
 					<posx>120</posx>
-					<width>35</width>
+					<width>36</width>
 					<include>PosterMediaFlagsVars</include>
 					<font>Font_Flags_Small</font>
 					<textcolor>FlagText</textcolor>
