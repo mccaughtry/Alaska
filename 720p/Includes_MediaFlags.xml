@@ -205,7 +205,7 @@
 					<visible>!IsEmpty(ListItem.AudioChannels)</visible>
 				</control>
 				<control type="label">
-					<label fallback="?">$INFO[ListItem.AudioChannels,,.0][/UPPERCASE]</label>
+					<label fallback="?">$INFO[ListItem.AudioChannels,,.0]</label>
 					<posx>65</posx>
 					<width>33</width>
 					<include>PosterMediaFlagsVars</include>
