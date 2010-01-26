@@ -133,11 +133,11 @@
 					<label>[UPPERCASE]$LOCALIZE[29802][/UPPERCASE]</label>
 				</control>
 			</control>
-			<include>Object_DebugGrid</include>
-			<control type="group">
-				<include>Debug</include>
-				<visible>Skin.HasSetting(debugmode)</visible>
-			</control>
+		</control>
+		<include>Object_DebugGrid</include>
+		<control type="group">
+			<include>Debug</include>
+			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
 	</controls>
 </window>
