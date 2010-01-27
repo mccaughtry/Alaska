@@ -259,7 +259,7 @@
 					<height>18</height>
 					<animation effect="rotate" center="auto" end="-90" time="0" condition="true">Conditional</animation>
 					<texture>arrowdownfo.png</texture>
-					<colordiffuse>ButtonFilterColor</colordiffuse>
+					<colordiffuse>ArrowFilterColor</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>872</posx>
@@ -268,7 +268,7 @@
 					<height>18</height>
 					<animation effect="rotate" center="auto" end="90" time="0" condition="true">Conditional</animation>
 					<texture>arrowdownfo.png</texture>
-					<colordiffuse>ButtonFilterColor</colordiffuse>
+					<colordiffuse>ArrowFilterColor</colordiffuse>
 				</control>
 			</control>			
 		</control>

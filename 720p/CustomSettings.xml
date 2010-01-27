@@ -31,7 +31,7 @@
 				<width>16</width>
 				<height>32</height>
 				<texture>arrowhomeup.png</texture>
-				<colordiffuse>ButtonFilterColor</colordiffuse>
+				<colordiffuse>ArrowFilterColor</colordiffuse>
 				<visible>!ControlGroup(9010).HasFocus</visible>
 			</control>
 			<control type="image">
@@ -49,7 +49,7 @@
 				<width>16</width>
 				<height>32</height>
 				<texture>arrowhomedown.png</texture>
-				<colordiffuse>ButtonFilterColor</colordiffuse>
+				<colordiffuse>ArrowFilterColor</colordiffuse>
 				<visible>!ControlGroup(9010).HasFocus</visible>
 			</control>
 			<control type="image">
@@ -1214,7 +1214,7 @@
 					<height>20</height>
 					<width>20</width>
 					<texture>arrowdownnf.png</texture>
-					<colordiffuse>ButtonFilterColor</colordiffuse>
+					<colordiffuse>ArrowFilterColor</colordiffuse>
 					<visible>Container(9000).Hasfocus(2) + !Container(9002).HasPrevious</visible>
 				</control>
 				<control type="image">
@@ -1224,7 +1224,7 @@
 					<height>20</height>
 					<width>20</width>
 					<texture>arrowdownfo.png</texture>
-					<colordiffuse>ButtonFilterColor</colordiffuse>
+					<colordiffuse>ArrowFilterColor</colordiffuse>
 					<visible>Container(9000).Hasfocus(2) + [Control.HasFocus(200) | Control.HasFocus(201) | Control.HasFocus(202)]</visible>
 				</control>
 				<control type="image">
@@ -1236,7 +1236,7 @@
 					<height>20</height>
 					<width>20</width>
 					<texture>arrowupfo.png</texture>
-					<colordiffuse>ButtonFilterColor</colordiffuse>
+					<colordiffuse>ArrowFilterColor</colordiffuse>
 					<visible>[Container(9000).Hasfocus(2) + Container(9002).HasPrevious] | [Container(9000).Hasfocus(3) + Container(9003).HasPrevious] | [Container(9000).Hasfocus(4) + Container(9004).HasPrevious] | [Container(9000).Hasfocus(5) + Container(9005).HasPrevious]</visible>
 				</control>
 				<control type="image">
@@ -1248,7 +1248,7 @@
 					<height>20</height>
 					<width>20</width>
 					<texture>arrowdownfo.png</texture>
-					<colordiffuse>ButtonFilterColor</colordiffuse>
+					<colordiffuse>ArrowFilterColor</colordiffuse>
 					<visible>[Container(9000).Hasfocus(2) + Container(9002).HasNext] | [Container(9000).Hasfocus(3) + Container(9003).HasNext] | [Container(9000).Hasfocus(4) + Container(9004).HasNext] | [Container(9000).Hasfocus(5) + Container(9005).HasNext]</visible>
 				</control>
 			</control>

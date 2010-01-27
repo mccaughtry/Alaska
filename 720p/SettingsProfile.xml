@@ -31,7 +31,7 @@
 					<height>20</height>
 					<width>20</width>
 					<texture>arrowupfo.png</texture>
-					<colordiffuse>ButtonFilterColor</colordiffuse>
+					<colordiffuse>ArrowFilterColor</colordiffuse>
 					<visible>Container(2).HasPrevious</visible>
 				</control>
 				<control type="image">
@@ -40,7 +40,7 @@
 					<height>20</height>
 					<width>20</width>
 					<texture>arrowdownfo.png</texture>
-					<colordiffuse>ButtonFilterColor</colordiffuse>
+					<colordiffuse>ArrowFilterColor</colordiffuse>
 					<visible>Container(2).HasNext</visible>
 				</control>
 				<control type="radiobutton" id="4">

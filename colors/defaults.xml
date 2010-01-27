@@ -18,6 +18,8 @@
 	<color name="BackgroundColor">ccffffff</color>
 	<color name="BackgroundFilterColor">dd575757</color>
 	<color name="ButtonFilterColor">FFc30000</color>
+	<color name="ArrowFilterColor">FFc30000</color>
+	<color name="ProgressFilterColor">FFc30000</color>
 
 	<!-- Home 1 Colours -->
 

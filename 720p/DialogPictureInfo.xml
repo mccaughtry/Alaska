@@ -98,7 +98,7 @@
 				<height>16</height>
 				<width>16</width>
 				<texture>arrowupfo.png</texture>
-				<colordiffuse>ButtonFilterColor</colordiffuse>
+				<colordiffuse>ArrowFilterColor</colordiffuse>
 				<visible>Container(5).HasPrevious</visible>
 			</control>
 			<control type="image">
@@ -107,7 +107,7 @@
 				<height>16</height>
 				<width>16</width>
 				<texture>arrowdownfo.png</texture>
-				<colordiffuse>ButtonFilterColor</colordiffuse>
+				<colordiffuse>ArrowFilterColor</colordiffuse>
 				<visible>Container(5).HasNext</visible>
 			</control>
 			<include>Object_DebugGrid</include>

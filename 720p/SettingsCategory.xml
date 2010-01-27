@@ -31,7 +31,7 @@
 				<width>16</width>
 				<height>32</height>
 				<texture>arrowhomeup.png</texture>
-				<colordiffuse>ButtonFilterColor</colordiffuse>
+				<colordiffuse>ArrowFilterColor</colordiffuse>
 				<visible>!ControlGroup(5).HasFocus + !Window.IsVisible(WeatherSettings)</visible>
 			</control>
 			<control type="image">
@@ -49,7 +49,7 @@
 				<width>16</width>
 				<height>32</height>
 				<texture>arrowhomedown.png</texture>
-				<colordiffuse>ButtonFilterColor</colordiffuse>
+				<colordiffuse>ArrowFilterColor</colordiffuse>
 				<visible>!ControlGroup(5).HasFocus + !Window.IsVisible(WeatherSettings)</visible>
 			</control>
 			<control type="image">
