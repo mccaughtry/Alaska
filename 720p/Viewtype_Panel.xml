@@ -74,7 +74,7 @@
 				<aligny>top</aligny>
 				<font>Font_Panel</font>
 				<textcolor>PosterTitle</textcolor>
-				<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
+				<label>[B]$INFO[ListItem.Label][/B]</label>
 				<wrapmultiline>true</wrapmultiline>
 				<visible>!Window.IsActive(2) + !Container.Content(episodes)</visible>
 			</control>
@@ -86,7 +86,7 @@
 				<aligny>top</aligny>
 				<font>Font_Panel</font>
 				<textcolor>PosterTitle</textcolor>
-				<label>[UPPERCASE][B]$INFO[ListItem.Episode]. $INFO[ListItem.Title][/B][/UPPERCASE]</label>
+				<label>[B]$INFO[ListItem.Episode]. $INFO[ListItem.Title][/B]</label>
 				<wrapmultiline>true</wrapmultiline>
 				<visible>!Window.IsActive(2) + Container.Content(episodes)</visible>
 			</control>

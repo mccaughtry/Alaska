@@ -83,7 +83,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<textcolor>PanelListItem</textcolor>
-						<label>[UPPERCASE]$INFO[ListItem.label2][/UPPERCASE]</label>
+						<label>$INFO[ListItem.label2]</label>
 					</control>
 				</itemlayout>
 				<focusedlayout height="40">
@@ -107,7 +107,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<textcolor>PanelListItemFocused</textcolor>
-						<label>[UPPERCASE]$INFO[ListItem.Size][/UPPERCASE]</label>
+						<label>$INFO[ListItem.Size]</label>
 						<visible>Control.HasFocus(20)</visible>
 					</control>
 					<control type="label">
@@ -130,7 +130,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<textcolor>PanelListItemSelected</textcolor>
-						<label>[UPPERCASE]$INFO[ListItem.Size][/UPPERCASE]</label>
+						<label>$INFO[ListItem.Size]</label>
 						<visible>Control.HasFocus(21)</visible>
 					</control>
 				</focusedlayout>
@@ -214,7 +214,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<textcolor>PanelListItem</textcolor>
-						<label>[UPPERCASE]$INFO[ListItem.label2][/UPPERCASE]</label>
+						<label>$INFO[ListItem.label2]</label>
 					</control>
 				</itemlayout>
 				<focusedlayout height="40">
@@ -238,7 +238,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<textcolor>PanelListItemFocused</textcolor>
-						<label>[UPPERCASE]$INFO[ListItem.Size][/UPPERCASE]</label>
+						<label>$INFO[ListItem.Size]</label>
 						<visible>Control.HasFocus(21)</visible>
 					</control>
 					<control type="label">
@@ -261,7 +261,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<textcolor>PanelListItemSelected</textcolor>
-						<label>[UPPERCASE]$INFO[ListItem.Size][/UPPERCASE]</label>
+						<label>$INFO[ListItem.Size]</label>
 						<visible>Control.HasFocus(20)</visible>
 					</control>
 				</focusedlayout>
@@ -274,11 +274,11 @@
 			<posy>30</posy>
 			<include>Animation_SlideDownFadeOut</include>
 			<control type="label">
-				<label>[UPPERCASE]$LOCALIZE[7][/UPPERCASE]</label>
+				<label>$LOCALIZE[7]</label>
 				<include>Global_HeadingSectionVars</include>
 			</control>
 			<control type="label">
-				<label>[UPPERCASE]$INFO[listitem.filenameandpath][/UPPERCASE]</label>
+				<label>$INFO[listitem.filenameandpath]</label>
 				<include>Global_HeadingDetailVars</include>
 			</control>
 		</control>

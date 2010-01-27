@@ -153,7 +153,7 @@
 				<scrollspeed>20</scrollspeed>
 				<font>Font_MainMenuLabel</font>
 				<textcolor>LandscapeTitle</textcolor>
-				<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
+				<label>[B]$INFO[ListItem.Label][/B]</label>
 				<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
 			</control>
 			<control type="label">
@@ -164,7 +164,7 @@
 				<aligny>center</aligny>
 				<font>Font_MainMenuLabel</font>
 				<textcolor>PosterTitle</textcolor>
-				<label>[UPPERCASE][B]$INFO[ListItem.Episode][/B][B]$INFO[ListItem.Title,. ][/B][/UPPERCASE]</label>
+				<label>[B]$INFO[ListItem.Episode][/B][B]$INFO[ListItem.Title,. ][/B]</label>
 				<visible>!IsEmpty(ListItem.Title) + Container.Content(episodes)</visible>
 			</control>
 			<control type="label">
@@ -175,7 +175,7 @@
 				<aligny>center</aligny>
 				<font>Font_MainMenuLabel</font>
 				<textcolor>PosterTitle</textcolor>
-				<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
+				<label>[B]$INFO[ListItem.Label][/B]</label>
 				<visible>IsEmpty(ListItem.Title) + Container.Content(episodes)</visible>
 			</control>
 			<control type="label">
@@ -186,7 +186,7 @@
 				<aligny>center</aligny>
 				<font>Font_LandScapeTVShow</font>
 				<textcolor>LandscapeTitle</textcolor>
-				<label>[UPPERCASE]$INFO[ListItem.Date,[B]$LOCALIZE[20416]: [/B]][/UPPERCASE]</label>
+				<label>$INFO[ListItem.Date,[B]$LOCALIZE[20416]: [/B]]</label>
 				<visible>Container.Content(episodes)</visible>
 			</control>
 			<control type="label">
@@ -197,7 +197,7 @@
 				<aligny>center</aligny>
 				<font>Font_LandScapeTVShow</font>
 				<textcolor>LandscapeTitle</textcolor>
-				<label>[UPPERCASE]$INFO[ListItem.Genre,[B]$LOCALIZE[515]: [/B]][/UPPERCASE]</label>
+				<label>$INFO[ListItem.Genre,[B]$LOCALIZE[515]: [/B]]</label>
 				<visible>Container.Content(tvshows)</visible>
 			</control>
 			<control type="label">
@@ -208,7 +208,7 @@
 				<aligny>center</aligny>
 				<font>Font_LandScapeTVShow</font>
 				<textcolor>LandscapeTitle</textcolor>
-				<label>[UPPERCASE]$INFO[ListItem.Episode,[B]$LOCALIZE[20360]: [/B]][/UPPERCASE]</label>
+				<label>$INFO[ListItem.Episode,[B]$LOCALIZE[20360]: [/B]]</label>
 				<visible>Container.Content(tvshows)</visible>
 			</control>
 			<control type="label">
@@ -219,7 +219,7 @@
 				<aligny>center</aligny>
 				<font>Font_LandScapeTVShow</font>
 				<textcolor>LandscapeTitle</textcolor>
-				<label>[UPPERCASE]$INFO[ListItem.Premiered,[B]$LOCALIZE[20360]: [/B]][/UPPERCASE]</label>
+				<label>$INFO[ListItem.Premiered,[B]$LOCALIZE[20360]: [/B]]</label>
 				<visible>Container.Content(tvshows)</visible>
 			</control>
 			<control type="textbox">
@@ -245,7 +245,7 @@
 				<scrollspeed>20</scrollspeed>
 				<font>Font_MainMenuLabel</font>
 				<textcolor>LandscapeTitle</textcolor>
-				<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
+				<label>[B]$INFO[ListItem.Label][/B]</label>
 				<visible>Container.Content(movies) | Container.Content(albums) | Container.Content(artists)</visible>
 			</control>
 			<control type="label">
@@ -256,7 +256,7 @@
 				<aligny>center</aligny>
 				<font>Font_ListDetail</font>
 				<textcolor>LandscapeTitle</textcolor>
-				<label>[UPPERCASE]$INFO[ListItem.Genre,[B]$LOCALIZE[515]: [/B]][/UPPERCASE]</label>
+				<label>$INFO[ListItem.Genre,[B]$LOCALIZE[515]: [/B]]</label>
 				<visible>Container.Content(movies) | Container.Content(albums)</visible>
 			</control>
 			<control type="textbox">

@@ -71,7 +71,7 @@
 					<textcolor>Time</textcolor>
 					<align>right</align>
 					<font>Font_ProgressDialog</font>
-					<label>[UPPERCASE]$LOCALIZE[13376][/UPPERCASE]</label>
+					<label>$LOCALIZE[13376]</label>
 				</control>
 				<control type="label">
 					<posx>310</posx>
@@ -81,7 +81,7 @@
 					<textcolor>Date</textcolor>
 					<align>right</align>
 					<font>Font_Date</font>
-					<label>[UPPERCASE]$INFO[player.volume][/UPPERCASE]</label>
+					<label>$INFO[player.volume]</label>
 				</control>
 			</control>
 			<control type="group">
@@ -120,7 +120,7 @@
 					<textcolor>Time</textcolor>
 					<align>right</align>
 					<font>Font_ProgressDialog</font>
-					<label>[UPPERCASE]$LOCALIZE[13376][/UPPERCASE]</label>
+					<label>$LOCALIZE[13376]</label>
 				</control>
 				<control type="label">
 					<posx>310</posx>
@@ -130,7 +130,7 @@
 					<textcolor>Date</textcolor>
 					<align>right</align>
 					<font>Font_Date</font>
-					<label>[UPPERCASE]$LOCALIZE[29802][/UPPERCASE]</label>
+					<label>$LOCALIZE[29802]</label>
 				</control>
 			</control>
 		</control>

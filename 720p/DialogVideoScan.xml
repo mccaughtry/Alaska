@@ -111,7 +111,7 @@
 				<align>right</align>
 				<font>Font_Date</font>
 				<textcolor>Date</textcolor>
-				<label>[UPPERCASE]$INFO[Control.GetLabel(405)][/UPPERCASE]</label>
+				<label>$INFO[Control.GetLabel(405)]</label>
 				<scroll>true</scroll>
 			</control>
 		</control>

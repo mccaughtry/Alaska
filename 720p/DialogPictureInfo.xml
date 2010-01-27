@@ -30,7 +30,7 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<textcolor>PanelListLabel</textcolor>
-				<label>[UPPERCASE]$LOCALIZE[13406][/UPPERCASE]</label>
+				<label>$LOCALIZE[13406]</label>
 				<font>Font_PanelLabel</font>
 			</control>
 			<control type="list" id="5">

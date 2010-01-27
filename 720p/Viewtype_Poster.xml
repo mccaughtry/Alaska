@@ -118,7 +118,7 @@
 				<aligny>center</aligny>
 				<font>Font_Date</font>
 				<textcolor>PosterTitle</textcolor>
-				<label>[UPPERCASE]$INFO[ListItem.Genre,[B]$LOCALIZE[515]: [/B]][/UPPERCASE]</label>
+				<label>$INFO[ListItem.Genre,[B]$LOCALIZE[515]: [/B]]</label>
 				<visible>Container.Content(tvshows) | Container.Content(movies)</visible>
 				<include>Animation_HiddenByInfo</include>
 			</control>
@@ -126,11 +126,11 @@
 				<posx>346</posx>
 				<posy>380</posy>
 				<width>404</width>
-				<height>200</height>
+				<height>206</height>
 				<aligny>top</aligny>
 				<font>Font_PosterTitle</font>
 				<textcolor>PosterTitle</textcolor>
-				<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+				<label>$INFO[ListItem.Label]</label>
 				<visible>!Container.Content(seasons)</visible>
 				<include>Animation_HiddenByInfo</include>
 			</control>
@@ -142,7 +142,7 @@
 				<aligny>top</aligny>
 				<font>Font_PosterTitle</font>
 				<textcolor>PosterTitle</textcolor>
-				<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+				<label>$INFO[ListItem.Label]</label>
 				<visible>Container.Content(seasons)</visible>
 				<include>Animation_HiddenByInfo</include>
 			</control>
@@ -312,7 +312,7 @@
 					<aligny>center</aligny>
 					<font>Font_Date</font>
 					<textcolor>PosterTitle</textcolor>
-					<label>[UPPERCASE]$INFO[ListItem.Genre,[B]$LOCALIZE[515]: [/B]][/UPPERCASE]</label>
+					<label>$INFO[ListItem.Genre,[B]$LOCALIZE[515]: [/B]]</label>
 					<visible>Container.Content(tvshows) | Container.Content(movies) | Container.Content(music)</visible>
 				<include>Animation_HiddenByInfo</include>
 				</control>
@@ -324,7 +324,7 @@
 					<aligny>top</aligny>
 					<font>Font_PosterTitle</font>
 					<textcolor>PosterTitle</textcolor>
-					<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+					<label>$INFO[ListItem.Label]</label>
 					<visible>!Container.Content(seasons)</visible>
 					<include>Animation_HiddenByInfo</include>
 				</control>
@@ -336,7 +336,7 @@
 					<aligny>top</aligny>
 					<font>Font_PosterTitle</font>
 					<textcolor>PosterTitle</textcolor>
-					<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+					<label>$INFO[ListItem.Label]</label>
 					<visible>Container.Content(seasons)</visible>
 					<include>Animation_HiddenByInfo</include>
 				</control>

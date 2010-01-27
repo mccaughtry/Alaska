@@ -1,21 +1,21 @@
 <includes>
 	<include name="PictureGrid2x4Button">
-		<label>[UPPERCASE]$LOCALIZE[40235][/UPPERCASE]</label>
+		<label>$LOCALIZE[40235]</label>
 		<onclick>Skin.Reset(picturegrid2z4)</onclick>
 		<onclick>Skin.SetBool(picturegrid4x3)</onclick>
 	</include>
 	<include name="PictureGrid4x3Button">
-		<label>[UPPERCASE]$LOCALIZE[40236][/UPPERCASE]</label>
+		<label>$LOCALIZE[40236]</label>
 		<onclick>Skin.Reset(picturegrid4x3)</onclick>
 		<onclick>Skin.SetBool(picturegrid7x1)</onclick>
 	</include>
 	<include name="PictureGrid7x1Button">
-		<label>[UPPERCASE]$LOCALIZE[40237][/UPPERCASE]</label>
+		<label>$LOCALIZE[40237]</label>
 		<onclick>Skin.Reset(picturegrid7x1)</onclick>
 		<onclick>Skin.SetBool(picturegrid7x2)</onclick>
 	</include>
 	<include name="PictureGrid7x2Button">
-		<label>[UPPERCASE]$LOCALIZE[40238][/UPPERCASE]</label>
+		<label>$LOCALIZE[40238]</label>
 		<onclick>Skin.Reset(picturegrid7x2)</onclick>
 		<onclick>Skin.SetBool(picturegrid2x4)</onclick>
 	</include>
