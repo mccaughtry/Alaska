@@ -37,9 +37,9 @@
 	<color name="TimeAMPM">FF727272</color>
 	<color name="Date">FF525252</color>
 	<color name="RSSBody">FF4f4f4f</color>
-	<color name="RSSHighlight">FF424242</color>
+	<color name="RSSHighlight">FFc30000</color>
 	<color name="RSSHeadline">FF4f4f4f</color>
-	<color name="RSSTitle">FF424242</color>
+	<color name="RSSTitle">FFc30000</color>
 	<color name="NowPlayingTrack">FF454545</color>
 	<color name="TextFocused">FFc30000</color>
 	<color name="Text">FF8f8f8f</color>

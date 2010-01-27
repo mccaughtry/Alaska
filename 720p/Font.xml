@@ -76,13 +76,13 @@
 		</font>
 		<font>
 			<name>Font_RSS</name>
-			<filename>alaska_regular_caps.ttf</filename>
+			<filename>alaska_regular.ttf</filename>
 			<aspect>0.9</aspect>
 			<size>19</size>
 		</font>
 		<font>
 			<name>Font_RSS_Big</name>
-			<filename>alaska_regular_caps.ttf</filename>
+			<filename>alaska_regular.ttf</filename>
 			<aspect>0.9</aspect>
 			<size>25</size>
 		</font>
