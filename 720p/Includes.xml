@@ -203,6 +203,7 @@
 				<description>Movies</description>
 				<label>[COLOR Clear]$LOCALIZE[342][/COLOR]$INFO[ListItem.SortLetter,: ]</label>
 				<width>960</width>
+				<posy>-4</posy>
 				<font>Font_Time</font>
 				<textcolor>Time</textcolor>
 				<align>left</align>
