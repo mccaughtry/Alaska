@@ -481,22 +481,22 @@
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">special://skin/media/weather/$INFO[Window(Weather).Property(Day3.FanartCode)]</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">weather/$INFO[Window(Weather).Property(Day3.FanartCode)]</imagepath>
 					<visible>ControlGroup(3700).HasFocus() + ControlGroup(3700).HasFocus(3704)</visible>
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">special://skin/media/weather/$INFO[Window(Weather).Property(Day2.FanartCode)]</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">weather/$INFO[Window(Weather).Property(Day2.FanartCode)]</imagepath>
 					<visible>ControlGroup(3700).HasFocus() + ControlGroup(3700).HasFocus(3703)</visible>
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">special://skin/media/weather/$INFO[Window(Weather).Property(Day1.FanartCode)]</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">weather/$INFO[Window(Weather).Property(Day1.FanartCode)]</imagepath>
 					<visible>ControlGroup(3700).HasFocus() + ControlGroup(3700).HasFocus(3702)</visible>
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">special://skin/media/weather/$INFO[Window(Weather).Property(Day0.FanartCode)]</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">weather/$INFO[Window(Weather).Property(Day0.FanartCode)]</imagepath>
 					<visible>ControlGroup(3700).HasFocus() + ControlGroup(3700).HasFocus(3701)</visible>
 				</control>
 				<control type="multiimage">
@@ -517,7 +517,7 @@
 					<timeperimage>20720</timeperimage>
 					<randomize>true</randomize>
 					<fadetime>400</fadetime>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">special://skin/media/weather/$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">weather/$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
 					<visible>Skin.HasSetting(homeweather) + !ControlGroup(3700).HasFocus()</visible>
 				</control>
 				<include>CustomWeatherImages</include>

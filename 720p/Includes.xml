@@ -561,7 +561,7 @@
 				<item id="1">
 					<description>Videos</description>
 					<label>$LOCALIZE[3]</label>
-					<icon>special://skin/media/backdrops/videos.jpg</icon>
+					<icon>backdrops/videos.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomVideosImage)]</thumb>
 					<onclick>ActivateWindow(VideoFiles)</onclick>
 					<visible>!Skin.HasSetting(novideos)</visible>
@@ -569,7 +569,7 @@
 				<item id="2">
 					<description>Music</description>
 					<label>$LOCALIZE[2]</label>
-					<icon>special://skin/media/backdrops/music.jpg</icon>
+					<icon>backdrops/music.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomMusicImage)]</thumb>
 					<onclick>ActivateWindow(Music)</onclick>
 					<visible>!Skin.HasSetting(nomusic)</visible>
@@ -577,7 +577,7 @@
 				<item id="3">
 					<description>Movies</description>
 					<label>$LOCALIZE[342]</label>
-					<icon>special://skin/media/backdrops/movies.jpg</icon>
+					<icon>backdrops/movies.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomMoviesImage)]</thumb>
 					<onclick>ActivateWindow(VideoLibrary,movietitles)</onclick>
 					<visible>!Skin.HasSetting(nomovies)</visible>
@@ -585,7 +585,7 @@
 				<item id="4">
 					<description>TV Shows</description>
 					<label>$LOCALIZE[20343]</label>
-					<icon>special://skin/media/backdrops/tvshows.jpg</icon>
+					<icon>backdrops/tvshows.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomTVShowsImage)]</thumb>
 					<onclick>ActivateWindow(VideoLibrary,tvshowtitles)</onclick>
 					<visible>!Skin.HasSetting(notvshows)</visible>
@@ -593,7 +593,7 @@
 				<item id="5">
 					<description>Pictures</description>
 					<label>$LOCALIZE[1]</label>
-					<icon>special://skin/media/backdrops/pictures.jpg</icon>
+					<icon>backdrops/pictures.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomPicturesImage)]</thumb>
 					<onclick>ActivateWindow(Pictures)</onclick>
 					<visible>!Skin.HasSetting(nopictures)</visible>
@@ -601,7 +601,7 @@
 				<item id="6">
 					<description>Weather</description>
 					<label>$LOCALIZE[8]</label>
-					<icon>special://skin/media/backdrops/weather.jpg</icon>
+					<icon>backdrops/weather.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomWeatherImage)]</thumb>
 					<onclick>ActivateWindow(2600)</onclick>
 					<visible>!Skin.HasSetting(noweather) + !Skin.HasSetting(homeweather)</visible>
@@ -616,7 +616,7 @@
 				<item id="7">
 					<description>Programs</description>
 					<label>$LOCALIZE[0]</label>
-					<icon>special://skin/media/backdrops/programs.jpg</icon>
+					<icon>backdrops/programs.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomProgramsImage)]</thumb>
 					<onclick>ActivateWindow(Programs)</onclick>
 					<visible>!Skin.HasSetting(noprograms) + !Skin.HasSetting(launcherforgames)</visible>
@@ -624,7 +624,7 @@
 				<item id="7">
 					<description>Games</description>
 					<label>$LOCALIZE[15016]</label>
-					<icon>special://skin/media/backdrops/games.jpg</icon>
+					<icon>backdrops/games.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomGamesImage)]</thumb>
 					<onclick>ActivateWindow(1,plugin://programs/Launcher/)</onclick>
 					<visible>!Skin.HasSetting(noprograms) + Skin.HasSetting(launcherforgames)</visible>
@@ -632,7 +632,7 @@
 				<item id="8">
 					<description>Settings</description>
 					<label>$LOCALIZE[5]</label>
-					<icon>special://skin/media/backdrops/settings.jpg</icon>
+					<icon>backdrops/settings.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomSettingsImage)]</thumb>
 					<onclick>ActivateWindow(4)</onclick>
 					<visible>!Skin.HasSetting(nosettings)</visible>
@@ -640,7 +640,7 @@
 				<item id="9">
 					<description>Scripts</description>
 					<label>$LOCALIZE[247]</label>
-					<icon>special://skin/media/backdrops/scripts.jpg</icon>
+					<icon>backdrops/scripts.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomScriptsImage)]</thumb>
 					<onclick>ActivateWindow(20)</onclick>
 					<visible>!Skin.HasSetting(noscripts)</visible>
@@ -648,7 +648,7 @@
 				<item id="10">
 					<description>Shutdown</description>
 					<label>$LOCALIZE[13005]</label>
-					<icon>special://skin/media/backdrops/shutdown.jpg</icon>
+					<icon>backdrops/shutdown.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomShutdownImage)]</thumb>
 					<onclick>Shutdown()</onclick>
 					<visible>!Skin.HasSetting(noshutdown)</visible>
@@ -656,7 +656,7 @@
 				<item id="11">
 					<description>Play Disc</description>
 					<label>$LOCALIZE[341]</label>
-					<icon>special://skin/media/backdrops/playdisc.jpg</icon>
+					<icon>backdrops/playdisc.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomPlayDiscImage)]</thumb>
 					<onclick>PlayDVD</onclick>
 					<visible>System.HasMediadvd</visible>
