@@ -49,7 +49,7 @@
 	<!-- Flags -->
 
 	<color name="FlagDiffuse">FFFFFFFF</color>
-	<color name="FlagText">ff000000</color>
+	<color name="FlagText">ff007aa2</color>
 	<color name="FlagText2">ff009ACD</color>
 	<color name="StarRatingDiffuse">FFFFFFFF</color>
 
@@ -115,9 +115,9 @@
 	<!-- Watched colours -->
 
 	<color name="WatchedIconBackFO">ff009ACD</color>
-	<color name="WatchedIconBackNF">86009ACD</color>
+	<color name="WatchedIconBackNF">48009ACD</color>
 	<color name="WatchedIconDiffuseFO">FFFFFFFF</color>
-	<color name="WatchedIconDiffuseNF">86FFFFFF</color>
+	<color name="WatchedIconDiffuseNF">48FFFFFF</color>
 
 	<!-- Dialogs -->
 
