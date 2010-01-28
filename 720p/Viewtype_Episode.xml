@@ -117,7 +117,7 @@
 						<effect type="fade" start="80" end="100" time="400" />
 					</animation>
 				</control>
-				<include condition="Skin.HasSetting(tvoverlays)">EpisodeTVOverlaysFO</include>
+				<include condition="Skin.HasSetting(tvoverlays) + Window.IsActive(25)">EpisodeTVOverlaysFO</include>
 				<control type="fadelabel">
 					<animation effect="slide" end="0,54" condition="IsEmpty(ListItem.Plot)">Conditional</animation>
 					<posx>292</posx>

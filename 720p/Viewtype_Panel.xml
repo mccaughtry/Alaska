@@ -495,8 +495,8 @@
 				<texture>poster/posterframeNF.png</texture>
 				<colordiffuse>WallIconDiffuse</colordiffuse>
 			</control>
-			<include condition="Skin.HasSetting(movieoverlays)">PanelMovieOverlaysNF</include>
-			<include condition="Skin.HasSetting(tvoverlays)">PanelTVOverlaysNF</include>
+			<include condition="Skin.HasSetting(movieoverlays) + Window.IsActive(25)">PanelMovieOverlaysNF</include>
+			<include condition="Skin.HasSetting(tvoverlays) + Window.IsActive(25)">PanelTVOverlaysNF</include>
 		</itemlayout>
 		<focusedlayout width="120" height="160">
 			<control type="image">
@@ -537,8 +537,8 @@
 					<effect type="fade" start="80" end="100" time="400" />
 				</animation>
 			</control>
-			<include condition="Skin.HasSetting(movieoverlays)">PanelMovieOverlaysFO</include>
-			<include condition="Skin.HasSetting(tvoverlays)">PanelTVOverlaysFO</include>
+			<include condition="Skin.HasSetting(movieoverlays) + Window.IsActive(25)">PanelMovieOverlaysFO</include>
+			<include condition="Skin.HasSetting(tvoverlays) + Window.IsActive(25)">PanelTVOverlaysFO</include>
 		</focusedlayout>
 	</include>
 	<include name="WidePanel">
@@ -568,7 +568,7 @@
 				<texture>landscape/landscapeframeNF.png</texture>
 				<colordiffuse>WallIconDiffuse</colordiffuse>
 			</control>
-			<include condition="Skin.HasSetting(tvoverlays)">WidePanelTVOverlaysNF</include>
+			<include condition="Skin.HasSetting(tvoverlays) + Window.IsActive(25)">WidePanelTVOverlaysNF</include>
 		</itemlayout>
 		<focusedlayout width="180" height="120">
 			<control type="image">
@@ -609,7 +609,7 @@
 					<effect type="fade" start="80" end="100" time="400" />
 				</animation>
 			</control>
-			<include condition="Skin.HasSetting(tvoverlays)">WidePanelTVOverlaysFO</include>
+			<include condition="Skin.HasSetting(tvoverlays) + Window.IsActive(25)">WidePanelTVOverlaysFO</include>
 		</focusedlayout>
 	</include>
 </includes>

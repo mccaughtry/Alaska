@@ -42,8 +42,8 @@
 				<texture>poster/posterframeNF.png</texture>
 				<include>Animation_HiddenByInfo</include>
 			</control>
-			<include condition="Skin.HasSetting(movieoverlays)">PosterMovieOverlaysNF</include>
-			<include condition="Skin.HasSetting(tvoverlays)">PosterTVOverlaysNF</include>
+			<include condition="Skin.HasSetting(movieoverlays) + Window.IsActive(25)">PosterMovieOverlaysNF</include>
+			<include condition="Skin.HasSetting(tvoverlays) + Window.IsActive(25)">PosterTVOverlaysNF</include>
 			<control type="image">
 				<posx>4</posx>
 				<posy>374</posy>
@@ -146,8 +146,8 @@
 				<visible>Container.Content(seasons)</visible>
 				<include>Animation_HiddenByInfo</include>
 			</control>
-			<include condition="Skin.HasSetting(movieoverlays)">PosterMovieOverlaysFO</include>
-			<include condition="Skin.HasSetting(tvoverlays)">PosterTVOverlaysFO</include>
+			<include condition="Skin.HasSetting(movieoverlays) + Window.IsActive(25)">PosterMovieOverlaysFO</include>
+			<include condition="Skin.HasSetting(tvoverlays) + Window.IsActive(25)">PosterTVOverlaysFO</include>
 		</focusedlayout>
 	</include>
 	<include name="Viewtype_Poster">
@@ -261,8 +261,8 @@
 					<texture>square/squareframeNF.png</texture>
 					<include>Animation_HiddenByInfo</include>
 				</control>
-				<include condition="Skin.HasSetting(movieoverlays)">SquareMovieOverlaysNF</include>
-				<include condition="Skin.HasSetting(tvoverlays)">SquareTVOverlaysNF</include>
+				<include condition="Skin.HasSetting(movieoverlays) + Window.IsActive(25)">SquareMovieOverlaysNF</include>
+				<include condition="Skin.HasSetting(tvoverlays) + Window.IsActive(25)">SquareTVOverlaysNF</include>
 			</itemlayout>
 			<focusedlayout width="300" height="300">
 				<control type="image">
@@ -340,8 +340,8 @@
 					<visible>Container.Content(seasons)</visible>
 					<include>Animation_HiddenByInfo</include>
 				</control>
-				<include condition="Skin.HasSetting(movieoverlays)">SquareMovieOverlaysFO</include>
-				<include condition="Skin.HasSetting(tvoverlays)">SquareTVOverlaysFO</include>
+				<include condition="Skin.HasSetting(movieoverlays) + Window.IsActive(25)">SquareMovieOverlaysFO</include>
+				<include condition="Skin.HasSetting(tvoverlays) + Window.IsActive(25)">SquareTVOverlaysFO</include>
 			</focusedlayout>
 		</control>
 	</include>

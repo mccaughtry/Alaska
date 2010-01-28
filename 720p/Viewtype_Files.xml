@@ -88,7 +88,7 @@
 					<selectedcolor>ListSelectedNF</selectedcolor>
 					<label>$INFO[ListItem.Label]</label>
 					<scroll>false</scroll>
-					<visible>Container.Content(movies) + [!Skin.HasSetting(movieoverlays) | [Skin.HasSetting(movieoverlays) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + ![stringcompare(ListItem.Title,Window(0).Property(LatestMovie.1.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.2.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.3.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.4.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.5.Title))]]]</visible>
+					<visible>Window.IsActive(25) + Container.Content(movies) + [!Skin.HasSetting(movieoverlays) | [Skin.HasSetting(movieoverlays) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + ![stringcompare(ListItem.Title,Window(0).Property(LatestMovie.1.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.2.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.3.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.4.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.5.Title))]]]</visible>
 				</control>
 				<control type="label">
 					<posx>770</posx>
@@ -102,7 +102,7 @@
 					<selectedcolor>ListSelectedNF</selectedcolor>
 					<label>$INFO[ListItem.Label,, ][COLOR EpisodeWatchedNF]&#134;[/COLOR]</label>
 					<scroll>false</scroll>
-					<visible>Container.Content(movies) + Skin.HasSetting(movieoverlays) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+					<visible>Window.IsActive(25) + Container.Content(movies) + Skin.HasSetting(movieoverlays) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
 				</control>
 				<control type="label">
 					<posx>770</posx>
@@ -116,7 +116,7 @@
 					<selectedcolor>ListSelectedNF</selectedcolor>
 					<label>$INFO[ListItem.Label,, ][COLOR EpisodeWatchedNF]&#135;[/COLOR]</label>
 					<scroll>false</scroll>
-					<visible>Container.Content(movies) + Skin.HasSetting(movieoverlays) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + [stringcompare(ListItem.Title,Window(0).Property(LatestMovie.1.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.2.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.3.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.4.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.5.Title))]s</visible>
+					<visible>Window.IsActive(25) + Container.Content(movies) + Skin.HasSetting(movieoverlays) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + [stringcompare(ListItem.Title,Window(0).Property(LatestMovie.1.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.2.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.3.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.4.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.5.Title))]s</visible>
 				</control>
 				<control type="label">
 					<posx>770</posx>
@@ -130,7 +130,7 @@
 					<selectedcolor>ListSelectedNF</selectedcolor>
 					<label>$INFO[ListItem.Title]</label>
 					<scroll>false</scroll>
-					<visible>[Container.Content(tvshows) | Container.Content(seasons)] + [!Skin.HasSetting(tvoverlays) | [Skin.HasSetting(tvoverlays) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + ![stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.1.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.2.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.3.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.4.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.5.EpisodeTitle))]]]</visible>
+					<visible>Window.IsActive(25) + [Container.Content(tvshows) | Container.Content(seasons)] + [!Skin.HasSetting(tvoverlays) | [Skin.HasSetting(tvoverlays) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + ![stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.1.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.2.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.3.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.4.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.5.EpisodeTitle))]]]</visible>
 				</control>
 				<control type="label">
 					<posx>770</posx>
@@ -144,7 +144,7 @@
 					<selectedcolor>ListSelectedNF</selectedcolor>
 					<label>$INFO[ListItem.Title,,  ][COLOR EpisodeWatchedNF]&#134;[/COLOR]</label>
 					<scroll>false</scroll>
-					<visible>[Container.Content(tvshows) | Container.Content(seasons)] + Skin.HasSetting(tvoverlays) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+					<visible>Window.IsActive(25) + [Container.Content(tvshows) | Container.Content(seasons)] + Skin.HasSetting(tvoverlays) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
 				</control>
 				<control type="label">
 					<posx>770</posx>
@@ -158,7 +158,7 @@
 					<selectedcolor>ListSelectedNF</selectedcolor>
 					<label>$INFO[ListItem.Episode]$INFO[ListItem.Title,. ]</label>
 					<scroll>false</scroll>
-					<visible>Container.Content(episodes) + [!Skin.HasSetting(tvoverlays) | [Skin.HasSetting(tvoverlays) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + ![stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.1.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.2.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.3.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.4.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.5.EpisodeTitle))]]]</visible>
+					<visible>Window.IsActive(25) + Container.Content(episodes) + [!Skin.HasSetting(tvoverlays) | [Skin.HasSetting(tvoverlays) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + ![stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.1.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.2.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.3.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.4.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.5.EpisodeTitle))]]]</visible>
 				</control>
 				<control type="label">
 					<posx>770</posx>
@@ -172,7 +172,7 @@
 					<selectedcolor>ListSelectedNF</selectedcolor>
 					<label>$INFO[ListItem.Episode]$INFO[ListItem.Title,. , ][COLOR EpisodeWatchedNF]&#134;[/COLOR]</label>
 					<scroll>false</scroll>
-					<visible>Container.Content(episodes) + Skin.HasSetting(tvoverlays) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+					<visible>Window.IsActive(25) + Container.Content(episodes) + Skin.HasSetting(tvoverlays) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
 				</control>
 				<control type="label">
 					<posx>770</posx>
@@ -186,7 +186,7 @@
 					<selectedcolor>ListSelectedNF</selectedcolor>
 					<label>$INFO[ListItem.Episode]$INFO[ListItem.Title,. , ][COLOR EpisodeWatchedNF]&#135;[/COLOR]</label>
 					<scroll>false</scroll>
-					<visible>Container.Content(episodes) + Skin.HasSetting(tvoverlays) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + [stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.1.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.2.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.3.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.4.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.5.EpisodeTitle))]</visible>
+					<visible>Window.IsActive(25) + Container.Content(episodes) + Skin.HasSetting(tvoverlays) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + [stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.1.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.2.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.3.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.4.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.5.EpisodeTitle))]</visible>
 				</control>
 			</itemlayout>
 			<focusedlayout width="870" height="62">
@@ -292,7 +292,7 @@
 					<textcolor>ListTitleFO</textcolor>
 					<selectedcolor>ListSelectedFO</selectedcolor>
 					<label>$INFO[ListItem.Label]</label>
-					<visible>Container.Content(movies) + [!Skin.HasSetting(movieoverlays) | [Skin.HasSetting(movieoverlays) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + ![stringcompare(ListItem.Title,Window(0).Property(LatestMovie.1.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.2.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.3.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.4.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.5.Title))]]]</visible>
+					<visible>Window.IsActive(25) + Container.Content(movies) + [!Skin.HasSetting(movieoverlays) | [Skin.HasSetting(movieoverlays) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + ![stringcompare(ListItem.Title,Window(0).Property(LatestMovie.1.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.2.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.3.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.4.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.5.Title))]]]</visible>
 					<animation effect="slide" end="0,-10" condition="!IsEmpty(ListItem.Genre) + !IsEmpty(ListItem.Duration)">Conditional</animation>
 				</control>
 				<control type="fadelabel">
@@ -310,7 +310,7 @@
 					<textcolor>ListTitleFO</textcolor>
 					<selectedcolor>ListSelectedFO</selectedcolor>
 					<label>$INFO[ListItem.Label,, ][COLOR EpisodeWatchedFO]&#134;[/COLOR]</label>
-					<visible>Container.Content(movies) + Skin.HasSetting(movieoverlays) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+					<visible>Window.IsActive(25) + Container.Content(movies) + Skin.HasSetting(movieoverlays) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
 					<animation effect="slide" end="0,-10" condition="!IsEmpty(ListItem.Genre) + !IsEmpty(ListItem.Duration)">Conditional</animation>
 				</control>
 				<control type="fadelabel">
@@ -328,7 +328,7 @@
 					<textcolor>ListTitleFO</textcolor>
 					<selectedcolor>ListSelectedFO</selectedcolor>
 					<label>$INFO[ListItem.Label,, ][COLOR EpisodeWatchedFO]&#135;[/COLOR]</label>
-					<visible>Container.Content(movies) + Skin.HasSetting(movieoverlays) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + [stringcompare(ListItem.Title,Window(0).Property(LatestMovie.1.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.2.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.3.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.4.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.5.Title))]s</visible>
+					<visible>Window.IsActive(25) + Container.Content(movies) + Skin.HasSetting(movieoverlays) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + [stringcompare(ListItem.Title,Window(0).Property(LatestMovie.1.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.2.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.3.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.4.Title)) | stringcompare(ListItem.Title,Window(0).Property(LatestMovie.5.Title))]s</visible>
 					<animation effect="slide" end="0,-10" condition="!IsEmpty(ListItem.Genre) + !IsEmpty(ListItem.Duration)">Conditional</animation>
 				</control>
 				<control type="fadelabel">
@@ -397,7 +397,7 @@
 					<textcolor>ListTitleFO</textcolor>
 					<selectedcolor>ListSelectedFO</selectedcolor>
 					<label>$INFO[ListItem.Title]</label>
-					<visible>[Container.Content(tvshows) | Container.Content(seasons)] + [!Skin.HasSetting(tvoverlays) | [Skin.HasSetting(tvoverlays) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + ![stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.1.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.2.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.3.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.4.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.5.EpisodeTitle))]]]</visible>
+					<visible>Window.IsActive(25) + [Container.Content(tvshows) | Container.Content(seasons)] + [!Skin.HasSetting(tvoverlays) | [Skin.HasSetting(tvoverlays) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + ![stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.1.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.2.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.3.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.4.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.5.EpisodeTitle))]]]</visible>
 					<animation effect="slide" end="0,-10" condition="!IsEmpty(ListItem.Date)">Conditional</animation>
 				</control>
 				<control type="fadelabel">
@@ -415,7 +415,7 @@
 					<textcolor>ListTitleFO</textcolor>
 					<selectedcolor>ListSelectedFO</selectedcolor>
 					<label>$INFO[ListItem.Title,, ][COLOR EpisodeWatchedFO]&#134;[/COLOR]</label>
-					<visible>[Container.Content(tvshows) | Container.Content(seasons)] + Skin.HasSetting(tvoverlays) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+					<visible>Window.IsActive(25) + [Container.Content(tvshows) | Container.Content(seasons)] + Skin.HasSetting(tvoverlays) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
 					<animation effect="slide" end="0,-10" condition="!IsEmpty(ListItem.Date)">Conditional</animation>
 				</control>
 				<control type="fadelabel">
@@ -433,7 +433,7 @@
 					<textcolor>ListTitleFO</textcolor>
 					<selectedcolor>ListSelectedFO</selectedcolor>
 					<label>$INFO[ListItem.Title,, ][COLOR EpisodeWatchedFO]&#135;[/COLOR]</label>
-					<visible>[Container.Content(tvshows) | Container.Content(seasons)] + Skin.HasSetting(tvoverlays) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + [stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.1.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.2.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.3.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.4.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.5.EpisodeTitle))]</visible>
+					<visible>Window.IsActive(25) + [Container.Content(tvshows) | Container.Content(seasons)] + Skin.HasSetting(tvoverlays) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + [stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.1.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.2.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.3.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.4.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.5.EpisodeTitle))]</visible>
 					<animation effect="slide" end="0,-10" condition="!IsEmpty(ListItem.Date)">Conditional</animation>
 				</control>
 				<control type="label">
@@ -464,7 +464,7 @@
 					<textcolor>ListTitleFO</textcolor>
 					<selectedcolor>ListSelectedFO</selectedcolor>
 					<label>$INFO[ListItem.Episode]$INFO[ListItem.Title,. ]</label>
-					<visible>Container.Content(episodes) + [!Skin.HasSetting(tvoverlays) | [Skin.HasSetting(tvoverlays) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + ![stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.1.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.2.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.3.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.4.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.5.EpisodeTitle))]]]</visible>
+					<visible>Window.IsActive(25) + Container.Content(episodes) + [!Skin.HasSetting(tvoverlays) | [Skin.HasSetting(tvoverlays) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + ![stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.1.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.2.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.3.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.4.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.5.EpisodeTitle))]]]</visible>
 					<animation effect="slide" end="0,-10" condition="!IsEmpty(ListItem.Date)">Conditional</animation>
 				</control>
 				<control type="fadelabel">
@@ -482,7 +482,7 @@
 					<textcolor>ListTitleFO</textcolor>
 					<selectedcolor>ListSelectedFO</selectedcolor>
 					<label>$INFO[ListItem.Episode]$INFO[ListItem.Title,. , ][COLOR EpisodeWatchedFO]&#134;[/COLOR]</label>
-					<visible>Container.Content(episodes) + Skin.HasSetting(tvoverlays) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+					<visible>Window.IsActive(25) + Container.Content(episodes) + Skin.HasSetting(tvoverlays) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
 					<animation effect="slide" end="0,-10" condition="!IsEmpty(ListItem.Date)">Conditional</animation>
 				</control>
 				<control type="fadelabel">
@@ -500,7 +500,7 @@
 					<textcolor>ListTitleFO</textcolor>
 					<selectedcolor>ListSelectedFO</selectedcolor>
 					<label>$INFO[ListItem.Episode]$INFO[ListItem.Title,. , ][COLOR EpisodeWatchedFO]&#135;[/COLOR]</label>
-					<visible>Container.Content(episodes) + Skin.HasSetting(tvoverlays) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + [stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.1.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.2.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.3.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.4.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.5.EpisodeTitle))]</visible>
+					<visible>Window.IsActive(25) + Container.Content(episodes) + Skin.HasSetting(tvoverlays) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + [stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.1.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.2.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.3.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.4.EpisodeTitle)) | stringcompare(ListItem.Title,Window(0).Property(LatestEpisode.5.EpisodeTitle))]</visible>
 					<animation effect="slide" end="0,-10" condition="!IsEmpty(ListItem.Date)">Conditional</animation>
 				</control>
 				<control type="label">

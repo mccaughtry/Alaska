@@ -60,8 +60,8 @@
 					<texture>landscape/landscapeframeNF.png</texture>
 					<include>Animation_HiddenByInfo</include>
 				</control>
-				<include condition="Skin.HasSetting(tvoverlays)">LandscapeTVOverlaysNF</include>
-				<include condition="Skin.HasSetting(movieoverlays)">LandscapeMovieOverlaysNF</include>
+				<include condition="Skin.HasSetting(tvoverlays) + Window.IsActive(25)">LandscapeTVOverlaysNF</include>
+				<include condition="Skin.HasSetting(movieoverlays) + Window.IsActive(25)">LandscapeMovieOverlaysNF</include>
 				<control type="image">
 					<posx>1</posx>
 					<posy>288</posy>
@@ -130,8 +130,8 @@
 						<effect type="fade" start="80" end="100" time="400" />
 					</animation>
 				</control>
-				<include condition="Skin.HasSetting(movieoverlays)">LandscapeMovieOverlaysFO</include>
-				<include condition="Skin.HasSetting(tvoverlays)">LandscapeTVOverlaysFO</include>
+				<include condition="Skin.HasSetting(movieoverlays) + Window.IsActive(25)">LandscapeMovieOverlaysFO</include>
+				<include condition="Skin.HasSetting(tvoverlays) + Window.IsActive(25)">LandscapeTVOverlaysFO</include>
 			</focusedlayout>
 		</control>
 		<!-- Browser label and flags -->

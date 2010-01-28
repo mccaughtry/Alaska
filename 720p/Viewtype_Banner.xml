@@ -93,7 +93,7 @@
 						<effect type="fade" start="80" end="100" time="400" />
 					</animation>
 				</control>
-				<include condition="Skin.HasSetting(tvoverlays)">BannerTVOverlaysFO</include>
+				<include condition="Skin.HasSetting(tvoverlays) + Window.IsActive(25)">BannerTVOverlaysFO</include>
 			</focusedlayout>
 		</control>
 		<control type="group">
