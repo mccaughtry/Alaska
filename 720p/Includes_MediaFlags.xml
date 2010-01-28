@@ -142,12 +142,6 @@
 				<control type="image">
 					<width>167</width>
 					<include>PosterMediaFlagsVars</include>
-					<texture>flags/frame_aspect.png</texture>
-					<visible>!IsEmpty(ListItem.VideoResolution)</visible>
-				</control>
-				<control type="image">
-					<width>167</width>
-					<include>PosterMediaFlagsVars</include>
 					<texture>flags/frame_aspect_480.png</texture>
 					<visible>!IsEmpty(ListItem.VideoResolution) + substring(ListItem.VideoResolution,480)</visible>
 				</control>
