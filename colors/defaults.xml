@@ -49,8 +49,9 @@
 	<!-- Flags -->
 
 	<color name="FlagDiffuse">CC474747</color>
-	<color name="FlagText">abFFFFFF</color>
-	<color name="FlagText2">CC474747</color>
+	<color name="CodecDiffuse">CC474747</color>
+	<color name="StudioDiffuse">CC474747</color>
+	<color name="FlagText">CC474747</color>
 	<color name="StarRatingDiffuse">FF727272</color>
 
 	<!-- OSD -->
