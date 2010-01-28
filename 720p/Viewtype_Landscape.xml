@@ -1,13 +1,13 @@
 <includes>
 	<include name="Viewtype_Landscape">
 		<!-- Browser -->
-		<control type="wraplist" id="52">
+		<control type="fixedlist" id="52">
 			<posx>-110</posx>
 			<posy>50</posy>
 			<height>500</height>
 			<width>1400</width>
-			<onleft>300</onleft>
-			<onright>300</onright>
+			<onleft>52</onleft>
+			<onright>52</onright>
 			<onup>7000</onup>
 			<ondown>7777</ondown>
 			<viewtype label="LANDSCAPE">list</viewtype>
