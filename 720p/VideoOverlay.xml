@@ -2,8 +2,8 @@
 <window id="2004">
 	<defaultcontrol>-</defaultcontrol>
 	<animation type="WindowOpen">
-		<effect type="slide" start="-600,0" end="0,0" time="600" tween="cubic" easing="out" />
-		<effect type="fade" start="0" end="100" time="600" />
+		<effect type="slide" start="-600,0" end="0,0" time="600" tween="cubic" easing="out" delay="400" />
+		<effect type="fade" start="0" end="100" time="600" delay="400" />
 	</animation>
 	<animation type="WindowClose">
 		<effect type="slide" start="0,0" end="-200,0" time="600" tween="cubic" easing="out" />
