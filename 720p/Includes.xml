@@ -159,7 +159,7 @@
 		</control>
 	</include>
 	<include name="Global_HeadingSectionVars">
-	<posy>-4</posy>
+		<posy>-4</posy>
 		<width>960</width>
 		<font>Font_Time</font>
 		<textcolor>Time</textcolor>

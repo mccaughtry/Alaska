@@ -13,15 +13,15 @@
 			<posy>85</posy>
 			<control type="image">
 				<width>660</width>
-				<height>592</height>
+				<height>542</height>
 				<posx>-20</posx>
-				<posy>0</posy>
+				<posy>50</posy>
 				<texture border="100">common/common_panel.png</texture>
 				<colordiffuse>PanelDiffuse</colordiffuse>
 			</control>
 			<control type="fadelabel" id="101">
 				<posx>35</posx>
-				<posy>520</posy>
+				<posy>514</posy>
 				<width>555</width>
 				<height>50</height>
 				<font>Font_ListTitleBigger</font>
@@ -34,7 +34,7 @@
 			</control>
 			<control type="fadelabel" id="101">
 				<posx>35</posx>
-				<posy>520</posy>
+				<posy>514</posy>
 				<width>555</width>
 				<height>50</height>
 				<font>Font_ListTitleBigger</font>
@@ -47,7 +47,7 @@
 			</control>
 			<control type="image">
 				<posx>22</posx>
-				<posy>515</posy>
+				<posy>514</posy>
 				<width>576</width>
 				<height>2</height>
 				<texture>common/divider.png</texture>
@@ -56,9 +56,9 @@
 			<control type="list" id="20">
 				<viewtype label="31752">list</viewtype>
 				<posx>14</posx>
-				<posy>30</posy>
+				<posy>80</posy>
 				<width>575</width>
-				<height>470</height>
+				<height>420</height>
 				<scrolltime>0</scrolltime>
 				<onright>21</onright>
 				<onup>20</onup>
@@ -144,15 +144,15 @@
 			<posy>85</posy>
 			<control type="image">
 				<width>660</width>
-				<height>592</height>
+				<height>542</height>
 				<posx>-20</posx>
-				<posy>0</posy>
+				<posy>50</posy>
 				<texture border="100">common/common_panel.png</texture>
 				<colordiffuse>PanelDiffuse</colordiffuse>
 			</control>
 			<control type="fadelabel" id="101">
 				<posx>35</posx>
-				<posy>520</posy>
+				<posy>514</posy>
 				<width>555</width>
 				<height>50</height>
 				<font>Font_ListTitleBigger</font>
@@ -165,7 +165,7 @@
 			</control>
 			<control type="fadelabel" id="101">
 				<posx>35</posx>
-				<posy>520</posy>
+				<posy>514</posy>
 				<width>555</width>
 				<height>50</height>
 				<font>Font_ListTitleBigger</font>
@@ -178,7 +178,7 @@
 			</control>
 			<control type="image">
 				<posx>22</posx>
-				<posy>515</posy>
+				<posy>514</posy>
 				<width>576</width>
 				<height>2</height>
 				<texture>common/divider.png</texture>
@@ -187,9 +187,9 @@
 			<control type="list" id="21">
 				<viewtype label="31752">list</viewtype>
 				<posx>14</posx>
-				<posy>30</posy>
+				<posy>80</posy>
 				<width>575</width>
-				<height>470</height>
+				<height>420</height>
 				<scrolltime>0</scrolltime>
 				<onleft>20</onleft>
 				<onup>21</onup>
