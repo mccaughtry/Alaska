@@ -15,6 +15,7 @@
 		<include>Viewtype_Files</include>
 		<include>Viewtype_List</include>
 		<include>Viewtype_MusicWall</include>
+		<include>Viewtype_SquarePoster</include>
 		<include>Global_ContextFilter</include>
 		<control type="grouplist" id="7000">
 			<include>WindowMenuVars</include>
