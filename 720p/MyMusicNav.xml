@@ -9,7 +9,7 @@
 			<fadetime>400</fadetime>
 			<texture>$INFO[ListItem.Property(Fanart_Image)]</texture>
 			<include>Animation_CommonFade</include>
-			<visible>!Skin.HasSetting(hidefanart) + !Control.IsVisible(50) + !Control.IsVisible(56)</visible>
+			<visible>!Skin.HasSetting(hidefanart)</visible>
 		</control>
 		<include>Global_Filter</include>
 		<include>Viewtype_MusicWall</include>
