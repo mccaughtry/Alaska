@@ -313,7 +313,7 @@
 				<visible>Window.IsActive(28)</visible>
 			</control>
 			<control type="label">
-				<label>$INFO[Container.NumItems,, ITEMS]</label>
+				<label>$INFO[Container.NumItems,, $LOCALIZE[40281]]</label>
 				<include>Global_HeadingDetailVars</include>
 				<visible>!Container.Content(episodes) + !Window.IsActive(134)</visible>
 			</control>
