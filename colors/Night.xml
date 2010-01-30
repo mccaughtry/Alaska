@@ -56,12 +56,12 @@
 
 	<!-- OSD -->
 
-	<color name="OSDNowPlayingBack">aa000000</color>
+	<color name="OSDNowPlayingBack">dd000000</color>
 	<color name="OSDNowPlaying">FFfafafa</color>
 	<color name="OSDNowPlayingTitle">FF8f8fff</color>
-	<color name="OSDProgressBar">FFc30000</color>
+	<color name="OSDProgressBar">ff009ACD</color>
 	<color name="OSDPlayingDuration">FF525252</color>
-	<color name="OSDBackground">FFd6d6d6</color>
+	<color name="OSDBackground">dd000000</color>
 
 	<!-- Window menu colours -->
 

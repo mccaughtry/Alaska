@@ -1161,7 +1161,7 @@
 					<width>600</width>
 					<font>Font_Date</font>
 					<textcolor>Date</textcolor>
-					<label>$LOCALIZE[40243]: $INFO[Player.FinishTime]</label>
+					<label>[B]$LOCALIZE[40243]:[/B] $INFO[Player.FinishTime]</label>
 					<align>right</align>
 				</control>
 			</control>
@@ -1178,6 +1178,7 @@
 				<height>18</height>
 				<aligny>center</aligny>
 				<font>Font_ListDetail</font>
+				<textcolor>Date</textcolor>
 				<label>$INFO[VideoPlayer.Time]</label>
 				<textcolor>OSDPlayingDuration</textcolor>
 			</control>
@@ -1201,6 +1202,7 @@
 				<aligny>center</aligny>
 				<align>right</align>
 				<font>Font_ListDetail</font>
+				<textcolor>Date</textcolor>
 				<label>$INFO[VideoPlayer.Duration]</label>
 				<textcolor>OSDPlayingDuration</textcolor>
 			</control>
