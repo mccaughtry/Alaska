@@ -132,7 +132,7 @@
 					<effect type="fade" start="100" end="75" time="200" />
 				</animation>
 			</control>
-			<control type="button" id="43">
+			<control type="button" id="42">
 				<include>WindowMenuLabel</include>
 				<label>$LOCALIZE[580]</label>
 				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(21)">
@@ -140,7 +140,7 @@
 					<effect type="fade" start="100" end="75" time="200" />
 				</animation>
 			</control>
-			<control type="button" id="42">
+			<control type="button" id="43">
 				<include>WindowMenuLabel</include>
 				<label>$LOCALIZE[40203]</label>
 				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(14)">
@@ -148,7 +148,7 @@
 					<effect type="fade" start="100" end="75" time="200" />
 				</animation>
 			</control>
-			<control type="button" id="43">
+			<control type="button" id="44">
 				<include>WindowMenuLabel</include>
 				<label>$LOCALIZE[369]</label>
 				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(8)">
@@ -156,7 +156,7 @@
 					<effect type="fade" start="100" end="75" time="200" />
 				</animation>
 			</control>
-			<control type="button" id="44">
+			<control type="button" id="45">
 				<include>WindowMenuLabel</include>
 				<label>$LOCALIZE[369]</label>
 				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(19)">
