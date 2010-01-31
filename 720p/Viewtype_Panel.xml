@@ -2,7 +2,7 @@
 	<include name="Viewtype_Panel">
 		<!-- Browser -->
 		<control type="panel" id="56">
-			<viewtype label="PANEL">icon</viewtype>
+			<viewtype label="40287">icon</viewtype>
 			<animation effect="slide" start="0,0" end="0,5" time="200" condition="!system.getbool(lookandfeel.enablerssfeeds) | Skin.HasSetting(RSS_only_on_home) + !Window.IsActive(home) + !Window.IsVisible(2006)">Conditional</animation>
 			<posx>490</posx>
 			<posy>105</posy>
@@ -26,7 +26,7 @@
 		</control>
 		<control type="panel" id="59">
 			<animation effect="slide" start="0,0" end="0,5" time="200" condition="!system.getbool(lookandfeel.enablerssfeeds) | Skin.HasSetting(RSS_only_on_home) + !Window.IsActive(home) + !Window.IsVisible(2006)">Conditional</animation>
-			<viewtype label="PANEL[CR]WIDE">icon</viewtype>
+			<viewtype label="40288">icon</viewtype>
 			<posx>490</posx>
 			<posy>105</posy>
 			<width>720</width>

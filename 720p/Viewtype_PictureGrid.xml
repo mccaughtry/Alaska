@@ -64,7 +64,7 @@
 	<include name="Viewtype_PictureGrid">
 		<!-- Browser -->
 		<control type="panel" id="50">
-			<viewtype label="GRID">icon</viewtype>
+			<viewtype label="40293">icon</viewtype>
 			<animation effect="slide" start="55,0" end="55,0" time="0" condition="Player.HasVideo">Conditional</animation>
 			<include condition="![Skin.HasSetting(picturegrid4x3) | Skin.HasSetting(picturegrid7x1) | Skin.HasSetting(picturegrid7x2)]">PictureGridVars2x4</include>
 			<include condition="Skin.HasSetting(picturegrid4x3)">PictureGridVars4x3</include>

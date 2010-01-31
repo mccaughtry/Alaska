@@ -2,7 +2,7 @@
 	<include name="Viewtype_Banner">
 		<!-- Browser -->
 		<control type="fixedlist" id="58">
-			<viewtype label="BANNER">list</viewtype>
+			<viewtype label="40286">list</viewtype>
 			<animation effect="slide" start="50,0" end="50,0" time="0" condition="Player.HasVideo">Conditional</animation>
 			<posx>250</posx>
 			<posy>80</posy>

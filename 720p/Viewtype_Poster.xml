@@ -161,7 +161,7 @@
 			<onright>50</onright>
 			<onup>7000</onup>
 			<ondown>7777</ondown>
-			<viewtype label="POSTER[CR]WRAP">list</viewtype>
+			<viewtype label="40282">list</viewtype>
 			<orientation>horizontal</orientation>
 			<focusposition>3</focusposition>
 			<scrolltime>200</scrolltime>
@@ -181,7 +181,7 @@
 			<onright>57</onright>
 			<onup>7000</onup>
 			<ondown>7777</ondown>
-			<viewtype label="POSTER[CR]FIXED">list</viewtype>
+			<viewtype label="40283">list</viewtype>
 			<orientation>horizontal</orientation>
 			<focusposition>3</focusposition>
 			<scrolltime>200</scrolltime>
@@ -195,7 +195,7 @@
 	<!-- Square View -->
 	<include name="Viewtype_SquarePoster">
 		<control type="wraplist" id="54">
-			<viewtype label="POSTER[CR]SQUARE">icon</viewtype>
+			<viewtype label="40284">icon</viewtype>
 			<posx>-110</posx>
 			<posy>150</posy>
 			<width>1400</width>

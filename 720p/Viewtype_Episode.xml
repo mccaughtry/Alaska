@@ -2,7 +2,7 @@
 	<include name="Viewtype_Episode">
 		<!-- Browser -->
 		<control type="fixedlist" id="51">
-			<viewtype label="EPISODE">list</viewtype>
+			<viewtype label="40290">list</viewtype>
 			<animation effect="slide" start="85,0" end="85,0" time="0" condition="Player.HasVideo">Conditional</animation>
 			<posx>267</posx>
 			<posy>110</posy>

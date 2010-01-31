@@ -11,7 +11,7 @@
 			<onleft>7000</onleft>
 			<onright>60</onright>
 			<scrolltime>160</scrolltime>
-			<viewtype label="FILES">list</viewtype>
+			<viewtype label="40289">list</viewtype>
 			<orientation>vertical</orientation>
 			<focusposition>6</focusposition>
 			<pagecontrol>60</pagecontrol>

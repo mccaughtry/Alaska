@@ -10,7 +10,7 @@
 			<onright>52</onright>
 			<onup>7000</onup>
 			<ondown>7777</ondown>
-			<viewtype label="LANDSCAPE">list</viewtype>
+			<viewtype label="40291">list</viewtype>
 			<orientation>horizontal</orientation>
 			<focusposition>2</focusposition>
 			<scrolltime>200</scrolltime>
