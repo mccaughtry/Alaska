@@ -95,7 +95,7 @@
 				<textcolor>Date</textcolor>
 				<label>$INFO[MusicPlayer.Rating,[B]$LOCALIZE[563]: [/B]]</label>
 				<animation effect="slide" end="0,22" condition="IsEmpty(MusicPlayer.Year)">Conditional</animation>
-				<animation effect="slide" end="0,22" condition="IsEmpty(MusicPlayer.BitRate)">Conditional</animation>
+				<animation effect="slide" end="0,22" condition="IsEmpty(MusicPlayer.PlaylistPosition)">Conditional</animation>
 			</control>
 			<control type="label">
 				<description>Year Info</description>
@@ -108,7 +108,7 @@
 				<font>Font_Date</font>
 				<textcolor>Date</textcolor>
 				<label>$INFO[MusicPlayer.Year,[B]$LOCALIZE[40124] [/B]]</label>
-				<animation effect="slide" end="0,22" condition="IsEmpty(MusicPlayer.BitRate)">Conditional</animation>
+				<animation effect="slide" end="0,22" condition="IsEmpty(MusicPlayer.PlaylistPosition)">Conditional</animation>
 			</control>
 			<control type="label">
 				<description>Track Info</description>
