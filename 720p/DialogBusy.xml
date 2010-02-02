@@ -41,18 +41,18 @@
 				<textcolor>Time</textcolor>
 				<align>right</align>
 				<font>Font_ProgressDialog</font>
+				<label>$LOCALIZE[20186]</label>
+			</control>
+			<control type="label">
+				<posx>310</posx>
+				<posy>35</posy>
+				<width>627</width>
+				<height>51</height>
+				<textcolor>Date</textcolor>
+				<align>right</align>
+				<font>Font_Date</font>
 				<label>$LOCALIZE[259]</label>
 			</control>
-				<control type="label">
-					<posx>310</posx>
-					<posy>35</posy>
-					<width>627</width>
-					<height>51</height>
-					<textcolor>Date</textcolor>
-					<align>right</align>
-					<font>Font_Date</font>
-					<label>$LOCALIZE[20186]</label>
-				</control>
 		</control>
 		<include>Object_DebugGrid</include>
 		<control type="group">
