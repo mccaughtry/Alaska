@@ -210,6 +210,20 @@
 						<onclick>Skin.SetFile(SubtitleScript_Path,.py)</onclick>
 						<visible>Skin.HasSetting(SubtitleDownload_Enable)</visible>
 					</control>
+					<control type="radiobutton" id="108">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[40294]</label>
+						<onclick>Skin.ToggleSetting(ViewLockdown)</onclick>
+						<selected>Skin.HasSetting(ViewLockdown)</selected>
+					</control>
+					<control type="radiobutton" id="109">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[40295]</label>
+						<onclick>Skin.ResetBool(ViewLockdown)</onclick>
+						<onclick>Skin.SetBool(ViewLockdown)</onclick>
+						<onclick>Skin.ToggleSetting(TotalLockdown)</onclick>
+						<selected>Skin.HasSetting(TotalLockdown)</selected>
+					</control>
 				</control>
 				<control type="grouplist" id="9002">
 					<visible>Container(9000).Hasfocus(2)</visible>
