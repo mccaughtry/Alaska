@@ -318,7 +318,7 @@
 				<visible>!Container.Content(episodes) + !Window.IsActive(134)</visible>
 			</control>
 			<control type="label">
-				<label>$INFO[ListItem.Season,SEASON , - ]$INFO[Container.NumItems,, EPISODES]</label>
+				<label>$LOCALIZE[20373] $INFO[ListItem.Season] - $INFO[Container.NumItems] $LOCALIZE[20360]</label>
 				<include>Global_HeadingDetailVars</include>
 				<visible>Container.Content(episodes) + !Window.IsActive(134)</visible>
 			</control>
