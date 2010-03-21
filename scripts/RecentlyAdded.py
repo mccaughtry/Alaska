@@ -82,7 +82,7 @@ class Main:
         # only need to make Totals not empty
         self.WINDOW.setProperty( "Database.Totals", "true" )
         # sql statement for movie totals
-        sql_totals = "select count(1), count(playCount), * from movieview group by lastPlayed"
+        sql_totals = "select count(1), count(playCount), movieview.* from movieview group by lastPlayed"
         totals_xml = xbmc.executehttpapi( "QueryVideoDatabase(%s)" % quote_plus( sql_totals ), )
         records = re.findall( "<record>(.+?)</record>", totals_xml, re.DOTALL )
         # initialize our list
@@ -105,7 +105,7 @@ class Main:
         totals_xml = xbmc.executehttpapi( "QueryVideoDatabase(%s)" % quote_plus( sql_totals ), )
         mvideos_totals = re.findall( "<field>(.+?)</field>", totals_xml, re.DOTALL )
         # sql statement for tv shows/episodes totals
-        sql_totals = "select count(1), sum(totalCount), sum(watched), sum(watchedCount) from tvshowview"
+        sql_totals = "select count(1), sum(totalCount), sum(watched), sum(watchedCount) from (select tvshow.*, path.strPath as strPath, counts.totalcount as totalCount, counts.watchedcount as watchedCount, counts.totalcount=counts.watchedcount as watched from tvshow join tvshowlinkpath on tvshow.idShow=tvshowlinkpath.idShow join path on path.idpath=tvshowlinkpath.idPath left outer join ( select tvshow.idShow as idShow,count(1) as totalcount, count(files.playCount) as watchedcount from tvshow join tvshowlinkepisode on tvshow.idShow = tvshowlinkepisode.idShow join episode on episode.idEpisode = tvshowlinkepisode.idEpisode join files on files.idFile = episode.idFile group by tvshow.idShow) counts on tvshow.idShow = counts.idShow) as tvshowview"
         totals_xml = xbmc.executehttpapi( "QueryVideoDatabase(%s)" % quote_plus( sql_totals ), )
         tvshows_totals = re.findall( "<field>(.+?)</field>", totals_xml, re.DOTALL )
         # if no tvshows we reset values
@@ -163,25 +163,6 @@ class Main:
             self.WINDOW.setProperty( "LatestMovie.%d.Rating" % ( count + 1, ), fields[ 6 ] )
             self.WINDOW.setProperty( "LatestMovie.%d.Year" % ( count + 1, ), fields[ 8 ] )
             self.WINDOW.setProperty( "LatestMovie.%d.RunningTime" % ( count + 1, ), fields[ 12 ] )
-
-            # My Custom Descriptions
-            self.WINDOW.setProperty( "LatestMovie.%d.Plot" % ( count + 1, ), fields[ 2 ] )
-            self.WINDOW.setProperty( "LatestMovie.%d.Outline" % ( count + 1, ), fields[ 3 ] )
-            self.WINDOW.setProperty( "LatestMovie.%d.Tagline" % ( count + 1, ), fields[ 4 ] )
-            self.WINDOW.setProperty( "LatestMovie.%d.Votes" % ( count + 1, ), fields[ 5 ] )
-            self.WINDOW.setProperty( "LatestMovie.%d.Rating" % ( count + 1, ), fields[ 6 ] )
-            self.WINDOW.setProperty( "LatestMovie.%d.Credits" % ( count + 1, ), fields[ 7 ] )
-            self.WINDOW.setProperty( "LatestMovie.%d.Year" % ( count + 1, ), fields[ 8 ] )
-            self.WINDOW.setProperty( "LatestMovie.%d.Duration" % ( count + 1, ), fields[ 12 ] )
-            self.WINDOW.setProperty( "LatestMovie.%d.Mpaa" % ( count + 1, ), fields[ 13 ] )
-            self.WINDOW.setProperty( "LatestMovie.%d.Top250" % ( count + 1, ), fields[ 14 ] )
-            self.WINDOW.setProperty( "LatestMovie.%d.Genre" % ( count + 1, ), fields[ 15 ] )
-            self.WINDOW.setProperty( "LatestMovie.%d.Director" % ( count + 1, ), fields[ 16 ] )
-            self.WINDOW.setProperty( "LatestMovie.%d.Studio" % ( count + 1, ), fields[ 19 ] )
-            self.WINDOW.setProperty( "LatestMovie.%d.Trailer" % ( count + 1, ), fields[ 20 ] )
-            self.WINDOW.setProperty( "LatestMovie.%d.File+ext" % ( count + 1, ), fields[ 23 ] )
-            self.WINDOW.setProperty( "LatestMovie.%d.Filepath" % ( count + 1, ), fields[ 24 ] )
-
             # get cache names of path to use for thumbnail/fanart and play path
             thumb_cache, fanart_cache, play_path = self._get_media( fields[ 24 ], fields[ 23 ] )
             self.WINDOW.setProperty( "LatestMovie.%d.Path" % ( count + 1, ), ( play_path, fields[ 20 ], )[ fields[ 20 ] != "" and self.PLAY_TRAILER ] )
