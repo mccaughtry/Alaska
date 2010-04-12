@@ -9,7 +9,6 @@
 		<origin x="0" y="0" />
 	</coordinates>
 	<controls>
-		<include>Global_DialogFilter</include>
 		<control type="label" id="1">
 			<description>Heading</description>
 			<posy>200</posy>

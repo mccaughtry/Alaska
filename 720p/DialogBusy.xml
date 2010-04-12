@@ -1,5 +1,5 @@
 <!--Alaska-->
-<window id="136">
+<window id="138">
 	<animation type="WindowOpen" reversible="false">
 		<effect type="fade" delay="200" start="0" end="100" time="100" />
 	</animation>
@@ -9,14 +9,6 @@
 			<posy>90</posy>
 			<width>707</width>
 			<height>183</height>
-			<control type="image">
-				<posx>324</posx>
-				<posy>12</posy>
-				<width>46</width>
-				<height>46</height>
-				<texture>dialogs/dialog_back.png</texture>
-				<colordiffuse>FFFFFFFF</colordiffuse>
-			</control>
 			<control type="image">
 				<posx>324</posx>
 				<posy>12</posy>
@@ -33,6 +25,27 @@
 				<texture>dialogs/busy.png</texture>
 				<colordiffuse>ProgressFilterColor</colordiffuse>
 				<animation effect="rotate" start="360" end="0" center="auto" time="800" loop="true" condition="true">conditional</animation>
+			</control>
+			<control type="label">
+				<description>Heading Label</description>
+				<posx>310</posx>
+				<posy>15</posy>
+				<width>627</width>
+				<height>51</height>
+				<textcolor>Time</textcolor>
+				<align>right</align>
+				<font>Font_ProgressDialog</font>
+				<label>503</label>
+			</control>
+			<control type="label">
+				<posx>310</posx>
+				<posy>35</posy>
+				<width>627</width>
+				<height>51</height>
+				<textcolor>Date</textcolor>
+				<align>right</align>
+				<font>Font_Date</font>
+				<label>20186</label>
 			</control>
 		</control>
 		<control type="group">

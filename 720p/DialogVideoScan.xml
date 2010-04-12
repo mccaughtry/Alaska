@@ -24,6 +24,7 @@
 			<animation effect="slide" end="0,-76" time="400" easing="inout" tween="cubic" condition="Window.IsVisible(104) | Window.IsVisible(113)">Conditional</animation>
 			<animation effect="slide" end="0,-76" time="400" easing="inout" tween="cubic" condition="Window.IsVisible(112)">Conditional</animation>
 			<animation effect="slide" end="0,-76" time="400" easing="inout" tween="cubic" condition="Window.IsVisible(101)">Conditional</animation>
+			<animation effect="slide" end="0,-76" time="400" easing="inout" tween="cubic" condition="Window.IsVisible(138)">Conditional</animation>
 			<posx>880</posx>
 			<posy>90</posy>
 			<width>707</width>
